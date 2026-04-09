@@ -196,6 +196,7 @@ copyright: >-
   Copyright &copy; 2026, Actian
 
 extra:
+  homepage: https://docs.actian.com/
   version:
     provider: mike
   analytics: 
