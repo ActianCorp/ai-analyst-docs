@@ -1,15 +1,16 @@
-# Actian MCP Server — Documentation Portal
+# Actian AI Analyst — Documentation Portal
 
-> Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) · Light/dark theme · Versioned with [mike](https://github.com/jimporter/mike)
+> Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) · Light/dark theme · Hosted on GitHub Pages
 
-**Repository:** https://alm.actian.com/bitbucket/users/alokaj/repos/actian_mcp_server  
-**Branch:** `mcpdocs`
+**Repository:** https://github.com/ActianCorp/ai-analyst-docs  
+**Branch:** `main`  
+**Live site:** https://docs.wobby.ai/
 
 ---
 
 ## About This Repository
 
-This repository contains the MkDocs-based documentation portal for the **Actian MCP Server**
+This repository contains the MkDocs-based documentation portal for **Actian AI Analyst** — a natural language analytics tool that lets you ask questions about your data and get instant, accurate answers.
 
 ---
 
@@ -17,43 +18,43 @@ This repository contains the MkDocs-based documentation portal for the **Actian 
 
 | Feature | Description |
 |---|---|
-| **MkDocs Material 9.6+** | Modern Material Design theme with light/dark toggle |
-| **Navigation** | Tabs, sections, breadcrumbs, instant loading, pruning |
+| **MkDocs Material 9.7+** | Modern Material Design theme with light/dark toggle |
+| **Navigation** | Tabs, sections, breadcrumbs, instant loading, custom sidebar |
 | **Search** | Enhanced search with highlighting, suggestions, and sharing |
-| **Diagrams** | Mermaid and PlantUML diagram support |
+| **Diagrams** | Mermaid diagram support |
 | **API docs** | Swagger UI tag plugin for OpenAPI specs |
 | **Versioning** | Multi-version support via `mike` |
 | **SEO** | Auto-generated meta descriptions, robots.txt, sitemap |
 | **Code blocks** | Copy button, syntax highlighting, annotations |
 | **Custom 404** | Branded 404 page |
-| **Edit on Bitbucket** | Per-page edit button linking to `mcpdocs` branch |
+| **Edit on GitHub** | Per-page edit button linking to the `main` branch on GitHub |
 
 ---
 
 ## Project Structure
 
 ```
-actian_mcp_server/
+ai-analyst-docs/
 ├── mkdocs.yml                  # Main MkDocs configuration
 ├── requirements.txt            # Python dependencies
-├── makefile                    # Docker shortcuts
+├── makefile                    # Shortcuts for common tasks
 ├── docs/                       # All documentation content
 │   ├── index.md                # Homepage (landing page)
 │   ├── .pages                  # Top-level navigation order
 │   ├── robots.txt              # Search engine directives
 │   ├── assets/                 # Logos, homepage images, site-wide CSS
-│   ├── stylesheets/            # Component CSS (search, DX styles)
-│   ├── javascripts/            # Custom JS (search, mermaid)
-│   ├── intro/                  # What is MCP? Architecture overview
-│   ├── get_started/            # Installation & quickstart
-│   ├── develop_with_mcp/       # Tools, Resources, Prompts, Plugins
-│   │   ├── tools/              # Defining MCP tools
-│   │   ├── resources/          # Defining MCP resources
-│   │   ├── prompts/            # Defining MCP prompt templates
-│   │   └── plugins/            # Building & registering plugins
-│   ├── configuration/          # Server configuration reference
-│   ├── deployment/             # Local, Docker, and production deployment
-│   └── APIs/                   # API reference documentation
+│   ├── stylesheets/            # Component CSS (nav, DX styles, extra)
+│   ├── javascripts/            # Custom JS (nav, search, mermaid)
+│   ├── quick-start/            # Getting started guides
+│   ├── account/                # Account & 2FA settings
+│   ├── agent/                  # Creating and working with agents
+│   ├── ai-analysts/            # AI Analyst creation and monitoring
+│   ├── connections/            # Data source connections and catalog
+│   ├── semantic-layer/         # Semantic layer, metrics, SemQL
+│   ├── steward-ai-agent/       # Steward AI agent docs
+│   ├── settings/               # Billing, members, integrations, etc.
+│   ├── governance/             # Audit logs, data handling, security
+│   └── public-api/             # API reference and keys
 ├── theme_overrides/            # Custom theme templates
 │   ├── main.html               # Base template (header, scripts)
 │   ├── home.html               # Landing page template
@@ -62,23 +63,19 @@ actian_mcp_server/
 │   ├── assets/stylesheets/     # Landing page & theme CSS
 │   └── partials/               # Partial templates
 ├── hooks/                      # MkDocs build hooks
-│   ├── bitbucket_edit_url.py   # Generates edit URLs for mcpdocs branch
 │   └── custom_lexers.py        # Custom syntax highlighters
-├── utils/                      # Utility scripts (audits, link checks)
 └── site/                       # Built output (auto-generated, do not edit)
 ```
 
 ---
-
 
 ## Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://alm.actian.com/bitbucket/users/alokaj/repos/actian_mcp_server
-cd actian_mcp_server
-git checkout mcpdocs
+git clone https://github.com/ActianCorp/ai-analyst-docs.git
+cd ai-analyst-docs
 ```
 
 ### 2. Install dependencies
@@ -98,7 +95,6 @@ This installs:
 | `mkdocs-minify-plugin` | HTML minification for production |
 | `mkdocs-swagger-ui-tag` | Swagger/OpenAPI rendering |
 | `mkdocs-meta-descriptions-plugin` | Auto SEO meta descriptions |
-| `plantuml-markdown` | PlantUML diagram support |
 
 ---
 
@@ -107,10 +103,10 @@ This installs:
 ### Option A: mkdocs serve (recommended for authoring)
 
 ```bash
-mkdocs serve
+mkdocs serve -a localhost:8000
 ```
 
-Opens a live-reload development server at **http://127.0.0.1:8000**. Changes to any file under `docs/` are reflected instantly.
+Opens a live-reload development server at **http://localhost:8000**. Changes to any file under `docs/` are reflected instantly.
 
 ### Option B: Dirty reload (faster for large sites)
 
@@ -120,6 +116,7 @@ mkdocs serve --dirtyreload
 
 Only rebuilds changed pages — faster during active writing.
 
+---
 
 ## Building the Site
 
@@ -167,7 +164,6 @@ Content supports:
 - **Admonitions** — `!!! note`, `!!! warning`, `!!! tip`
 - **Code blocks** — syntax highlighting + copy button
 - **Mermaid diagrams** — inside ```mermaid``` fenced blocks
-- **PlantUML diagrams** — via the `plantuml_markdown` extension
 - **Tabbed content** — `=== "Tab 1"` syntax
 ```
 
@@ -185,26 +181,10 @@ nav:
 ### Step 4: Preview and commit
 
 ```bash
-mkdocs serve              # Preview at http://127.0.0.1:8000
+mkdocs serve -a localhost:8000   # Preview at http://localhost:8000
 git add .
 git commit -m "docs: add my_section"
-git push origin mcpdocs
-```
-
----
-
-## Adding API Documentation
-
-Place your OpenAPI/Swagger JSON spec in `docs/APIs/` and create a Markdown file:
-
-```markdown
----
-title: My API
----
-
-# My API
-
-<swagger-ui src="my-api-spec.json"/>
+git push origin main
 ```
 
 ---
@@ -218,12 +198,14 @@ title: My API
 | `theme_overrides/assets/stylesheets/actian-landing.css` | Landing page, CSS variables, dark mode |
 | `docs/assets/stylesheets/style.css` | Header, tabs, search bar, general overrides |
 | `docs/stylesheets/dx_style.css` | Search enhancements, syntax highlighting |
+| `docs/stylesheets/comprehensive-nav.css` | Custom sidebar navigation styles |
 
 ### Logos and images
 
-- **Site logo:** Replace `docs/assets/dx_logo.png`
-- **Favicon:** Replace `docs/assets/favicon.png`
-- **Landing page images:** Add to `docs/assets/homepage-images/`
+- **Site logo:** `docs/assets/images/actian-logo.svg`
+- **Favicon:** `docs/assets/favicon.png`
+- **Landing page images:** `docs/assets/homepage-images/`
+- **Content images:** `docs/assets/gitbook/`
 
 ### Templates
 
@@ -240,11 +222,45 @@ Key sections:
 
 - **`site_name`** — Documentation title
 - **`site_url`** — Production URL
-- **`repo_url`** — Bitbucket repo link
-- **`theme.palette`** — Light/dark mode (light is default)
+- **`repo_url`** — GitHub repo link (drives the repo icon in the header)
+- **`edit_uri`** — Path used to build the "Edit on GitHub" links
+- **`theme.palette`** — Light/dark mode configuration
 - **`theme.features`** — Navigation behaviour toggles
 - **`plugins`** — Search, versioning, minification, etc.
 - **`extra_css` / `extra_javascript`** — Custom stylesheets and scripts
+
+---
+
+## Edit on GitHub
+
+Every page on the documentation site has a **pencil (✏️) edit icon** in the top-right corner. Clicking it takes you directly to the corresponding `.md` source file on GitHub, so you can propose corrections without cloning the repo.
+
+### How it works
+
+1. **Click the edit icon** on any documentation page.  
+   You are taken to the source `.md` file on GitHub (`main` branch).
+
+2. **Edit the file** in GitHub's web editor:
+   - Click the pencil icon in the file toolbar.
+   - Make your changes to the Markdown content.
+
+3. **Commit your changes:**
+   - Scroll down to **Commit changes**.
+   - Add a short description of your change.
+   - Select **"Create a new branch and open a pull request"** if you do not have write access to `main`.
+   - If you have write access, you can commit directly to `main`.
+
+4. **Open a Pull Request** (if on a feature branch):
+   - Target branch: `main`
+   - Describe your change and assign a reviewer.
+
+### Edit URL format
+
+The edit button points to:
+
+```
+https://github.com/ActianCorp/ai-analyst-docs/edit/main/docs/{page-path}
+```
 
 ---
 
@@ -270,12 +286,25 @@ mike serve
 
 | Command | Description |
 |---|---|
-| `mkdocs serve` | Start live-reload dev server |
+| `mkdocs serve -a localhost:8000` | Start live-reload dev server |
 | `mkdocs serve --dirtyreload` | Faster dev server (rebuilds only changed pages) |
 | `mkdocs build` | Build the static site to `site/` |
 | `mkdocs build --strict` | Build with strict mode (fail on warnings) |
 | `mike deploy <version>` | Deploy a versioned build to gh-pages |
 | `mike serve` | Serve versioned docs locally |
+
+---
+
+## Contributing
+
+1. Fork or clone the repository
+2. Create a feature branch: `git checkout -b feature/my-update`
+3. Make your changes in the `docs/` directory
+4. Preview locally with `mkdocs serve -a localhost:8000`
+5. Commit and push to GitHub
+6. Open a Pull Request targeting `main`
+
+> **Note:** Only edit files in `docs/` unless you are intentionally modifying the theme, build config, or hooks.
 
 ---
 
@@ -286,55 +315,4 @@ mike serve
 - [Material Reference](https://squidfunk.github.io/mkdocs-material/reference/)
 - [Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
 - [mike — Versioning](https://github.com/jimporter/mike)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
-
----
-
-## Using the Edit Button on the Documentation Portal
-
-Every page on the published documentation site has a **pencil (✏️) edit icon** in the top-right corner (next to the page title). Use it to suggest corrections, report errors, or improve content directly.
-
-### How it works
-
-1. **Click the edit icon** on any documentation page.  
-   You will be taken directly to the source `.md` file for that page in Bitbucket, on the `mcpdocs` branch.
-
-2. **Edit the file** in Bitbucket's web editor:
-   - Click **Edit** (pencil icon) in Bitbucket's file toolbar.
-   - Make your changes to the Markdown content.
-
-3. **Commit your changes:**
-   - Scroll down to the **Commit changes** section.
-   - Add a short commit message describing what you changed.
-   - Choose **"Create a new branch"** if you do not have write access to `mcpdocs`, then open a Pull Request.
-   - If you have write access, you can commit directly to `mcpdocs`.
-
-4. **Open a Pull Request** (if on a feature branch):
-   - Target branch: `mcpdocs`
-   - Add a description of your change and assign a reviewer.
-
-### Edit URL format
-
-The edit button points to:
-
-```
-https://alm.actian.com/bitbucket/users/alokaj/repos/actian_mcp_server/browse/docs/{page-path}?at=refs%2Fheads%2Fmcpdocs&mode=edit
-```
-
-> **Tip:** If the edit icon is not visible, ensure you are viewing the published HTML portal (served via mike or the deployed site), not a local `mkdocs serve` preview.
-
----
-
-## Contributing
-
-1. Clone the repository and check out the `mcpdocs` branch
-2. Create a feature branch: `git checkout -b feature/my-update`
-3. Make your changes in the `docs/` directory
-4. Preview locally with `mkdocs serve`
-5. Commit and push to Bitbucket
-6. Open a Pull Request targeting `mcpdocs`
-
-> **Note:** Only edit files in `docs/` unless you are intentionally modifying the theme, build hooks, or CI pipeline.
-
----
-
+- [Actian AI Analyst](https://docs.wobby.ai/)

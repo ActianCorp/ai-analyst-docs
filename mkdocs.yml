@@ -107,9 +107,9 @@ extra:
 
 
 # Repository
-# repo_url: https://github.com/actian/ai-analyst-docs
-# repo_name: ai-analyst-docs
-# edit_uri: "edit/main/docs/"
+repo_url: https://github.com/ActianCorp/ai-analyst-docs
+repo_name: ActianCorp/ai-analyst-docs
+edit_uri: "edit/main/docs/"
 
 # Customization
 extra_css:
