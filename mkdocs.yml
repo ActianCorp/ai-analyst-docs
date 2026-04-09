@@ -5,7 +5,114 @@ site_description: >-
   Documentation for Actian AI Analyst — ask questions about your data in plain language and get instant, accurate answers.
 use_directory_urls: false
 docs_dir: docs
-site_dir: site 
+site_dir: site
+
+# Navigation
+nav:
+  - Home: index.md
+  - Quick Start:
+    - quick-start/getting-started-studio.md
+    - quick-start/getting-started-explorer.md
+    - quick-start/access-wobby.md
+  - Account:
+    - account/two-factor-authentication-2fa.md
+  - Explorer:
+    - agent/working-with-agents/README.md
+    - agent/working-with-agents/wobby-explorer.md
+    - agent/working-with-agents/asking-questions.md
+    - agent/working-with-agents/saved-prompts.md
+    - agent/working-with-agents/deep-analysis-vs-quick-analysis.md
+    - agent/working-with-agents/tips-for-quick-analysis.md
+  - AI Analysts:
+    - Creating an AI Analyst:
+      - ai-analysts/creating-an-agent/models.md
+      - ai-analysts/creating-an-agent/configuration.md
+      - ai-analysts/creating-an-agent/suggestions.md
+      - ai-analysts/creating-an-agent/saved-prompts.md
+    - Monitoring:
+      - ai-analysts/monitoring/README.md
+      - ai-analysts/monitoring/traces.md
+      - ai-analysts/monitoring/analytics.md
+  - Connections:
+    - Data Sources (DB/DWH):
+      - connections/connect-a-data-source/README.md
+      - connections/connect-a-data-source/csv-files.md
+      - connections/connect-a-data-source/postgresql.md
+      - connections/connect-a-data-source/mysql.md
+      - connections/connect-a-data-source/snowflake.md
+      - connections/connect-a-data-source/bigquery.md
+      - connections/connect-a-data-source/microsoft-sql-server-ms-sql.md
+      - connections/connect-a-data-source/azure-synapse.md
+      - connections/connect-a-data-source/aws-redshift.md
+      - connections/connect-a-data-source/mariadb.md
+      - connections/connect-a-data-source/microsoft-fabric.md
+      - connections/connect-a-data-source/motherduck.md
+      - connections/connect-a-data-source/databricks.md
+      - connections/connect-a-data-source/actian-data-platform.md
+      - connections/connect-a-data-source/actian-zen.md
+      - connections/connect-a-data-source/clickhouse.md
+    - Data Source Health Monitoring: connections/data-source-health-monitoring.md
+    - Data Catalogs:
+      - connections/catalog/README.md
+      - connections/catalog/actian-data-intelligence-platform.md
+    - Messaging Apps:
+      - connections/messaging-apps/README.md
+      - connections/messaging-apps/slack.md
+      - connections/messaging-apps/teams.md
+    - Table Metadata:
+      - connections/table-metadata/README.md
+      - connections/table-metadata/manage-metadata-in-the-ui.md
+      - connections/table-metadata/import-metadata-using-yaml.md
+  - Semantic Layer:
+    - semantic-layer/overview.md
+    - Models:
+      - semantic-layer/models/README.md
+      - Creating Models:
+        - semantic-layer/models/creating-models/README.md
+        - semantic-layer/models/creating-models/creating-models-with-steward.md
+        - semantic-layer/models/creating-models/creating-models-from-sql.md
+        - semantic-layer/models/creating-models/creating-models-from-table.md
+      - semantic-layer/models/dimensions.md
+      - semantic-layer/models/measures.md
+      - semantic-layer/models/relationships.md
+      - semantic-layer/models/pre-defined-filters.md
+    - semantic-layer/metrics.md
+    - semantic-layer/glossary.md
+    - Semantic SQL (SemQL):
+      - semantic-layer/semql/README.md
+      - semantic-layer/semql/compilation-and-dialects.md
+      - semantic-layer/semql/core-syntax.md
+      - semantic-layer/semql/dimensions-vs-measures.md
+      - semantic-layer/semql/geo-functions.md
+      - semantic-layer/semql/examples.md
+  - Steward AI Agent:
+    - steward-ai-agent/using-steward.md
+    - Proactive Steward Inbox: steward-ai-agent/steward-inbox.md
+  - Settings:
+    - settings/general.md
+    - settings/members.md
+    - settings/integrations.md
+    - settings/notifications.md
+    - settings/security.md
+    - settings/profile.md
+    - Billing & Usage: settings/billing.md
+    - Public API:
+      - public-api/README.md
+      - API Keys: public-api/api-keys.md
+      - API Reference: public-api/reference/README.md
+  - Governance:
+    - governance/audit-logs.md
+    - Export Semantic Layer & Agents:
+      - governance/export-semantic-layer-and-agents/README.md
+      - Actian AI Analyst Lossless Format: governance/export-semantic-layer-and-agents/wobby-lossless-format.md
+      - Open Semantic Interchange Format: governance/export-semantic-layer-and-agents/open-semantic-interchange-format.md
+    - Import Semantic Layer & Agents:
+      - governance/import-semantic-layer-and-agents/README.md
+      - Import OSI Format: governance/import-semantic-layer-and-agents/import-osi-format.md
+      - Import Actian AI Analyst Format (YAML / JSON): governance/import-semantic-layer-and-agents/import-wobby-format-yaml-json.md
+    - governance/how-ai-analyst-handles-your-data.md
+    - governance/how-wobby-protects-your-data.md
+
 # Theme Configuration
 theme:
   name: material
@@ -14,7 +121,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.indexes
     - navigation.top
     - navigation.instant
     - navigation.expand
@@ -154,4 +260,5 @@ plugins:
 
 # Hooks
 hooks:
+  - hooks/section_index.py
   - hooks/custom_lexers.py
