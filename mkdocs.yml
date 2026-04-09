@@ -99,7 +99,7 @@ nav:
     - Public API:
       - public-api/README.md
       - API Keys: public-api/api-keys.md
-      - API Reference: public-api/reference/README.md
+      - API Reference: public-api/reference/index.md
   - Governance:
     - governance/audit-logs.md
     - Export Semantic Layer & Agents:
@@ -254,6 +254,9 @@ plugins:
       enable_creation_date: false
   - minify:
       minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+        remove_empty_space: true
   - meta:
       meta_file: .meta.yml
   - meta-descriptions

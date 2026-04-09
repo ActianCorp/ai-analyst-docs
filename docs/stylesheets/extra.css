@@ -103,7 +103,7 @@ body,
 .md-header__topic {
   color: var(--color-accent) !important;
   font-family: var(--md-text-font);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .md-header__button {
@@ -589,4 +589,45 @@ pre code {
   display: block !important;
   max-width: 100%;
   height: auto;
+}
+
+/* ═══════════════════════════════════════════════
+   API Reference page — full-bleed Redoc layout
+   ═══════════════════════════════════════════════ */
+
+/* Remove all padding/margin from the content area on the API reference page */
+[data-md-url*="public-api/reference"] .md-content,
+[data-md-url*="public-api/reference"] .md-content__inner {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Hide the auto-generated h1 page title (we let Redoc own the header) */
+[data-md-url*="public-api/reference"] .md-content__inner > h1:first-child {
+  display: none !important;
+}
+
+/* Hide the page footer (prev/next nav) on this page */
+[data-md-url*="public-api/reference"] .md-footer-nav,
+[data-md-url*="public-api/reference"] footer.md-footer {
+  display: none !important;
+}
+
+/* Make the Redoc container fill viewport height */
+#redoc-container {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+}
+
+/* Prevent MkDocs from clipping Redoc's fixed sidebar */
+[data-md-url*="public-api/reference"] .md-main__inner {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+[data-md-url*="public-api/reference"] .md-sidebar--secondary {
+  display: none !important;
 }
