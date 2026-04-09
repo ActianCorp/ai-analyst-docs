@@ -17,6 +17,7 @@ In Studio, the *Traces* tab gives [Admins](../../settings/members.md) a full log
 2. Click the *Monitoring* button in the top action bar and select *Traces*.
 
 The page has a two-panel layout:
+
 - *Left panel* — a scrollable list of all traces for this AI Analyst, grouped by date.
 - *Right panel* — the full conversation detail for whichever trace you have selected.
 

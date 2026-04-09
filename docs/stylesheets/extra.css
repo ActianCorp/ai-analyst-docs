@@ -327,7 +327,7 @@ body,
 }
 
 .md-typeset h1 { font-size: 2em;   margin-top: 0; margin-bottom: 0.5rem; }
-.md-typeset h2 { font-size: 1.5em; border-bottom: 1px solid var(--color-border); padding-bottom: 0.3em; }
+.md-typeset h2 { font-size: 1.5em; }
 .md-typeset h3 { font-size: 1.25em; }
 
 /* ═══════════════════════════════════════════════
@@ -575,7 +575,8 @@ pre code {
 
 /* Ensure content images always display */
 .md-content figure {
-  margin: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .md-content figure img {
@@ -583,12 +584,19 @@ pre code {
   max-width: 100%;
   height: auto;
   border-radius: 0.2rem;
+  margin: 0 auto;
 }
 
 .md-typeset figure img {
   display: block !important;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+
+.md-typeset img {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ═══════════════════════════════════════════════

@@ -20,8 +20,4 @@ By default, any user in your organization can interact with the agent. If you wa
 3. Search for and select users who should have access to this agent.
 4. Your changes are saved automatically.
 
-    <figure><img src=”../../assets/gitbook/image-22.png” alt=””><figcaption></figcaption></figure>
-
-<figure><img src=”../../assets/gitbook/image-21.png” alt=””><figcaption></figcaption></figure>
-
 ✅ Once restricted, **only selected users** (plus all Admins) will see and use this agent in Actian AI Analyst Explorer.

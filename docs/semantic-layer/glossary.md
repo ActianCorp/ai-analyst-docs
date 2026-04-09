@@ -48,6 +48,7 @@ Write definitions that someone unfamiliar with your business could understand. E
 Alternative words or phrases people might use for this term. This helps agents understand questions phrased different ways.
 
 **Example**: For the term "Active Customer", you might add synonyms:
+
 - Current Customer
 - Engaged Customer
 - Active Account
@@ -81,6 +82,7 @@ When you map a term to a model, you provide a description explaining the connect
 Connect this term to specific dimensions that represent or describe this concept.
 
 **Example**: The term "Active Customer" might map to:
+
 - `customer_tier` dimension - "Customer tier - either 'premium', 'standard', or 'basic'"
 
 When someone asks "Show me active customers by tier", agents know to use the `customer_tier` dimension.
@@ -90,6 +92,7 @@ When someone asks "Show me active customers by tier", agents know to use the `cu
 Connect this term to pre-defined filters that subset data to this concept.
 
 **Example**: The term "Active Customer" might map to:
+
 - `active_customers_only` - "Filter to include only customers with recent activity"
 - `premium_customers_only` - "Filter to include only premium tier customers"
 
@@ -100,6 +103,7 @@ When someone asks "Show me just active customers", agents know to apply the `act
 Connect this term to measures that count, sum, or aggregate this concept.
 
 **Example**: The term "Active Customer" might map to:
+
 - `total_customers` - "Total count of customers"
 - `total_active_customers` - "Count of active customers only"
 - `total_premium_customers` - "Count of premium tier customers only"
@@ -124,6 +128,7 @@ When a user asks a question, agents:
 4. **Construct the query** using those components
 
 **Example Flow**:
+
 - User asks: "How many customers placed orders last week?"
 - Agent finds "customers" in glossary → mapped to `customers` model and `total_customers` measure
 - Agent finds "orders" in glossary → mapped to `orders` model
@@ -135,6 +140,7 @@ When a user asks a question, agents:
 The glossary displays terms alphabetically in the UI, grouped by first letter (A, B, C, etc.). This makes it easy to browse and find terms.
 
 Each term shows:
+
 - The term name
 - A brief preview of the definition
 - A count of mappings (shown as a number badge)

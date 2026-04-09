@@ -41,13 +41,13 @@ Good data questions are specific, include relevant context, and clearly state wh
 Your agent can generate various chart types:
 
 * **Bar Charts**: Great for comparing quantities across categories
-  * _Example_: Regional sales comparison showing which territories outperform others
+     * _Example_: Regional sales comparison showing which territories outperform others
 * **Pie Charts**: Useful for showing proportions within a whole
-  * _Example_: Market share distribution across product lines
+     * _Example_: Market share distribution across product lines
 * **Line Charts**: Ideal for visualizing trends over time
-  * _Example_: Monthly revenue growth highlighting seasonal patterns
+     * _Example_: Monthly revenue growth highlighting seasonal patterns
 * **Scatter Plots**: Excellent for identifying relationships between variables
-  * _Example_: Price vs. rating correlation for your product catalog
+     * _Example_: Price vs. rating correlation for your product catalog
 
 _Coming soon: funnel charts & geo maps._
 

@@ -36,7 +36,8 @@ Steward works better when it understands your domain, so share relevant context:
 
 You don't need to have everything figured out upfront—Steward helps you discover what's in your data and what's worth modeling. Start with one model (your most important business entity) rather than trying to build everything at once.
 
-**Tip:** Describe what you want in business terms, not technical ones. Say "I need to track customer lifetime value" rather than "create a metric with a SUM expression joined across two tables."
+!!! tip
+    Describe what you want in business terms, not technical ones. Say "I need to track customer lifetime value" rather than "create a metric with a SUM expression joined across two tables."
 
 ***
 

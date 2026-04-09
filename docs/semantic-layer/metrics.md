@@ -4,10 +4,12 @@ Metrics are business calculations that combine measures, apply business logic, a
 
 ## Metrics vs Measures
 
-**Measures** = Simple aggregations on a single model
+**Measures** = Simple aggregations on a single model 
+ 
 - Example: `COUNT(DISTINCT customer_id)`, `SUM(revenue)`
 
 **Metrics** = Complex business calculations that may:
+
 - Combine multiple measures
 - Apply mathematical operations (division, multiplication, etc.)
 - Span multiple models (cross-model calculations)
@@ -15,6 +17,7 @@ Metrics are business calculations that combine measures, apply business logic, a
 - Specify which dimensions make sense for grouping
 
 **Example**:
+
 - Measure: `SUM(revenue)` and `COUNT(DISTINCT customer_id)`
 - Metric: `SUM(revenue) / COUNT(DISTINCT customer_id)` → average revenue per customer
 
@@ -41,6 +44,7 @@ This helps everyone understand what the metric measures.
 ### Guidance
 
 Free-text context that helps agents interpret and use this metric correctly. Explain:
+
 - What the metric indicates about your business
 - How to interpret the values
 - When this metric is most useful
@@ -55,6 +59,7 @@ Think of this as the context you'd provide when explaining this KPI to a new tea
 Specify which dimensions agents can use to break down this metric. This controls how the metric can be analyzed.
 
 **Example**: For a metric calculating "average order value", you might allow grouping by:
+
 - `orders.customer_id`
 - `orders.product_category`
 - `orders.region`
@@ -68,6 +73,7 @@ When someone asks "Show me average order value by region", the agent knows it ca
 Pre-defined filters that should be applied when calculating this metric. These ensure the metric always uses the right subset of data.
 
 **Example**: For "average order value", you might apply:
+
 - `completed_orders_only` - Only completed orders
 - `exclude_cancelled` - Exclude cancelled orders
 
@@ -177,12 +183,14 @@ SUM(CASE WHEN date >= DATE_SUB(NOW(), INTERVAL 7 DAY) THEN value END)
 ## When to Use Metrics vs Measures
 
 ### Use a Measure when:
+
 - You need a simple aggregation (count, sum, average)
 - The calculation stays within one model
 - No complex business logic is involved
 - You're building blocks that metrics will use
 
 ### Use a Metric when:
+
 - You're combining multiple measures
 - You need to enforce specific filters or dimensions
 - The calculation represents a key business KPI

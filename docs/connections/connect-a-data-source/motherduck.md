@@ -24,7 +24,8 @@ To connect Actian AI Analyst, you'll need an access token from your MotherDuck a
 3. Click **Create Access Token**.
 4. Copy the generated token — you'll need to paste it into Actian AI Analyst.
 
-📌 **Reminder:** Treat your token like a password. Keep it secure and don't share it.
+!!! warning
+    Treat your token like a password. Keep it secure and don't share it.
 
 ***
 
@@ -37,14 +38,14 @@ In Actian AI Analyst:\
 
 ### 3. Fill in Connection Details
 
-* **Display Name**\
+* **Display Name**  
   Give your data source a friendly name (e.g. `Marketing Analytics`).
-* **Database Name**\
+* **Database Name**  
   Enter the name of your MotherDuck database.\
   &#xNAN;_(Example: if your DB is `md:my_database`, enter `my_database`.)_
-* **Access Token**\
+* **Access Token**  
   Paste the token you copied from MotherDuck.
-* **Database Schemas** \
+* **Database Schemas**  
   Select specific schemas you want to connect.
 
 ***

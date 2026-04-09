@@ -62,7 +62,8 @@ FROM sales
 JOIN customers[enterprise] ON sales.customer_id = customers.customer_id
 ```
 
-> **Important:** Filters go in `FROM` or `JOIN` — never in `SELECT`. See [Dimensions vs. Measures](dimensions-vs-measures.md) for more on filters.
+!!! important
+    Filters go in `FROM` or `JOIN` — never in `SELECT`. See [Dimensions vs. Measures](dimensions-vs-measures.md) for more on filters.
 
 ***
 
@@ -160,7 +161,8 @@ FROM organizations[active_only]
 JOIN users[verified] ON organizations.organization_id = users.organization_id
 ```
 
-**Tip:** Use the relationships documented in your semantic layer to find the correct join columns. Don't assume — look up the exact field names.
+!!! tip
+    Use the relationships documented in your semantic layer to find the correct join columns. Don't assume — look up the exact field names.
 
 ***
 
@@ -185,7 +187,8 @@ FROM top_regions
 ORDER BY total_revenue DESC
 ```
 
-> **Note:** Inside a CTE body, you're writing against semantic models normally. But once a CTE is defined, references to it are plain SQL — `region` in `top_regions` is just a column alias, not a semantic reference.
+!!! note
+    Inside a CTE body, you're writing against semantic models normally. But once a CTE is defined, references to it are plain SQL — `region` in `top_regions` is just a column alias, not a semantic reference.
 
 ***
 
@@ -316,7 +319,8 @@ GROUP BY name, total_revenue
 | `BOOL_AND(x)`, `BOOL_OR(x)`       | Boolean aggregations               |
 | `CORR(x, y)`                      | Correlation coefficient            |
 
-> **Reminder:** Never wrap a predefined measure in an aggregate function. `SUM(total_revenue)` will double-aggregate. See [Dimensions vs. Measures](dimensions-vs-measures.md).
+!!! warning
+    Never wrap a predefined measure in an aggregate function. `SUM(total_revenue)` will double-aggregate. See [Dimensions vs. Measures](dimensions-vs-measures.md).
 
 ### Date / Time
 

@@ -45,11 +45,11 @@ Deep Analysis creates a structured research plan and executes multiple sub-analy
 
 You can easily switch between Deep Analysis and Quick Analysis by selecting it when sending a message to Actian AI Analyst. If you are using Actian AI Analyst in Slack, you can trigger Deep Research by adding `--deep` to your query.
 
-<div><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.29.09@2x-1-1.png" alt="" width="563"><figcaption></figcaption></figure> <figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.33.50@2x.png" alt="" width="563"><figcaption></figcaption></figure></div>
+<div style="display:flex;gap:1rem;justify-content:center;align-items:flex-start;"><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.29.09@2x-1-1.png" alt="" style="max-width:100%;height:auto;"><figcaption></figcaption></figure><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.33.50@2x.png" alt="" style="max-width:100%;height:auto;"><figcaption></figcaption></figure></div>
 
 After processing your query, the agent will draft a plan, which you can adjust by either deleting items from it, or adding new ones.
 
-<div align="left"><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.46.37@2x-1.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.54.26@2x.png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div style="display:flex;gap:1rem;justify-content:center;align-items:flex-start;"><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.46.37@2x-1.png" alt="" style="max-width:100%;height:auto;"><figcaption></figcaption></figure><figure><img src="../../assets/gitbook/CleanShot-2025-07-08-at-15.54.26@2x.png" alt="" style="max-width:100%;height:auto;"><figcaption></figcaption></figure></div>
 
 Once you submit the plan, the agent will get to work creating a report, which once created can be shared with your team.
 

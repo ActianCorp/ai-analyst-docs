@@ -24,6 +24,7 @@ customer_id
 Dimensions map to plain columns in your database, or sometimes to expressions (e.g., `full_name` might be `CONCAT(first_name, ' ', last_name)` under the hood — you don't need to know).
 
 You use dimensions in:
+
 - `SELECT` (to show the attribute)
 - `WHERE` (to filter before aggregation)
 - `GROUP BY` (to group rows)
@@ -46,6 +47,7 @@ conversion_rate       -- might be SUM(conversions) / COUNT(sessions)
 Measures are defined once by your data team in the semantic layer. They encode all the business logic: which columns to use, how to handle nulls, what to exclude, how to aggregate.
 
 You use measures in:
+
 - `SELECT` (to show the metric)
 - `HAVING` (to filter after aggregation)
 - `ORDER BY` (to sort by the metric)

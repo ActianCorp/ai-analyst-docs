@@ -10,7 +10,8 @@ Measures are the numerical values you want to calculate from your data. They alw
 
 Unlike dimensions (which you filter or group by), measures require an aggregation function. You can't just display a measure—you calculate it across a set of records.
 
-**Common aggregation functions**:
+**Common aggregation functions**:  
+
 - `COUNT()` - Count records
 - `COUNT(DISTINCT)` - Count unique values
 - `SUM()` - Add up values
@@ -49,7 +50,8 @@ Specify how many decimal places to show in results. Use the up/down arrows to ad
 
 Select the unit that describes what this measure represents. This ensures agents present results correctly and helps prevent confusion.
 
-**Common units**:
+**Common units**:  
+
 - Counts: `customers`, `orders`, `items`, `products`, `users`, `transactions`
 - Currency: `EUR`, `USD`, `GBP`, `JPY`
 - Percentages: `percent`, `rate`, `ratio`
@@ -62,7 +64,8 @@ Select the unit that describes what this measure represents. This ensures agents
 
 The calculation logic that defines what this measure computes. This is where you specify the aggregation function.
 
-**Examples**:
+**Examples**:  
+
 - `COUNT(DISTINCT(id))` - Count unique IDs
 - `COUNT(*)` - Count all records
 - `SUM(revenue)` - Sum up revenue values
@@ -114,6 +117,7 @@ AVG(order_value)
 **Dimensions** = Attributes you filter or group by (no aggregation)
 
 **Example**:
+
 - "Show me **total revenue** (measure) **by customer** (dimension)"
 - "Count **number of orders** (measure) **by month** (dimension)"
 

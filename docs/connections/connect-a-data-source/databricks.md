@@ -56,13 +56,13 @@ You can connect Actian AI Analyst using either of the following:
 
 To allow Actian AI Analyst to read metadata and query tables, the identity (user or service principal) must have:
 
-* **SQL Warehouse**:\
-  `CAN USE` on the target warehouse\
-  \&#xNAN;_Databricks → SQL Warehouses → Select warehouse → Permissions_
+* **SQL Warehouse**:  
+     `CAN USE` on the target warehouse  
+      &#xNAN;_Databricks → SQL Warehouses → Select warehouse → Permissions_
 * **Unity Catalog**:
-  * `USAGE` on each **catalog** you want Actian AI Analyst to scan
-  * `USAGE` on **schemas** inside those catalogs
-  * `SELECT` on **tables** or **views** you want Actian AI Analyst to query
+     * `USAGE` on each **catalog** you want Actian AI Analyst to scan
+     * `USAGE` on **schemas** inside those catalogs
+     * `SELECT` on **tables** or **views** you want Actian AI Analyst to query
 
 > ℹ️ Missing privileges will result in empty catalog/schema/table lists during metadata sync.
 

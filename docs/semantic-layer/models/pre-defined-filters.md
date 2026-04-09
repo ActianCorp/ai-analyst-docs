@@ -34,13 +34,15 @@ This helps agents understand when to apply this filter.
 
 Toggle this on if you want this filter automatically applied to all queries using this model.
 
-**When to use "Apply by default"**:
+**When to use "Apply by default"**:  
+
 - Excluding test or demo data
 - Excluding deleted or archived records
 - Filtering to only production data
 - Any condition that should "always" be true unless explicitly overridden
 
-**When to leave it off**:
+**When to leave it off**:  
+
 - Optional conditions agents might want (like "active only" or "premium customers")
 - Filters that only apply to specific analyses
 - Conditions that depend on the question being asked
@@ -49,7 +51,8 @@ Toggle this on if you want this filter automatically applied to all queries usin
 
 The filter condition written in SemQL (Semantic Query Language). This defines which records to include or exclude.
 
-**Examples**:
+**Examples**:  
+
 - `{{ customers.tier }} = "PREMIUM"` - Only premium customers
 - `{{ users.is_active }} = true` - Only active users
 - `{{ orders.created_at }} >= DATE_SUB(NOW(), INTERVAL 90 DAY)` - Last 90 days
@@ -62,7 +65,8 @@ SemQL uses double curly braces (`{{ }}`) to reference dimensions from your model
 
 These filters run automatically on every query. Use them to ensure data quality and exclude records that should never be included in analysis.
 
-**Common mandatory filters**:
+**Common mandatory filters**:  
+
 - `exclude_test_data` - Filter out test accounts
 - `exclude_deleted` - Remove soft-deleted records
 - `production_only` - Only include production environment data
@@ -73,7 +77,8 @@ These filters run automatically on every query. Use them to ensure data quality 
 
 These filters are available for agents to apply when relevant to the question being asked.
 
-**Common optional filters**:
+**Common optional filters**:  
+
 - `active_only` - Only active/current records
 - `premium_customers` - Filter to premium tier
 - `recently_created` - Last 30/60/90 days

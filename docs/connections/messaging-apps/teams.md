@@ -78,7 +78,7 @@ To upload the Actian AI Analyst bot, your Teams policy must allow custom app upl
 
 * After uploading, add the bot to a **standard Teams channel** (not a group chat or DM).
 * To add to a channel:
-  * Pick the desired channel when prompted during upload, or add the bot to a channel later via Teams.
+     * Pick the desired channel when prompted during upload, or add the bot to a channel later via Teams.
 
 !!! info
 
@@ -114,9 +114,9 @@ To upload the Actian AI Analyst bot, your Teams policy must allow custom app upl
 ### Additional Notes
 
 * **Troubleshooting:**
-  * If you can't upload, double-check Teams app policies.
-  * If the bot isn't responding, verify agent linkage in Actian AI Analyst Studio.
-  * If you see a message saying the bot isn't available in a channel, make sure you're using the correct channel that was linked in Studio — the bot does not respond in DMs, group chats, or unlinked channels.
+     * If you can't upload, double-check Teams app policies.
+     * If the bot isn't responding, verify agent linkage in Actian AI Analyst Studio.
+     * If you see a message saying the bot isn't available in a channel, make sure you're using the correct channel that was linked in Studio — the bot does not respond in DMs, group chats, or unlinked channels.
 
 ***
 

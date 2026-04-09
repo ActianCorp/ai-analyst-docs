@@ -29,7 +29,7 @@ You'll need these later for the Actian AI Analyst connection form.
 
 ***
 
-**Step 3:  Create a Client Secret**
+#### Step 3:  Create a Client Secret
 
 1. In your app registration, go to **Certificates & secrets**.
 2. Under **Client secrets**, click **New client secret**.
@@ -43,7 +43,7 @@ You'll need these later for the Actian AI Analyst connection form.
 
 ***
 
-Step 4:  Grant Database Access to the Service Principal
+#### Step 4:  Grant Database Access to the Service Principal
 
 Run the following commands in your Fabric SQL database to grant read access:
 
@@ -58,7 +58,7 @@ ALTER ROLE db_datareader ADD MEMBER [<service-principal-name>];
 
 ***
 
-Step 5:  Add the Connection in Actian AI Analyst
+#### Step 5:  Add the Connection in Actian AI Analyst
 
 1. Click **Connections → Plus button → Select Microsoft Fabric**.
 2. Fill in the form:

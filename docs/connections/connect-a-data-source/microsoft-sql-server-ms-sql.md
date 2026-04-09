@@ -42,7 +42,7 @@ ALTER ROLE db_datareader ADD MEMBER analyst_user;
 
 
 
-### 3. Allow Actian AI Analyst's IP Address
+### 2. Allow Actian AI Analyst's IP Address
 
 If your SQL Server is behind a firewall or uses network policies, make sure to allow inbound traffic from Actian AI Analyst's static IP:
 
@@ -52,7 +52,7 @@ If your SQL Server is behind a firewall or uses network policies, make sure to a
 
 > This is required for Actian AI Analyst's agents to access your database.
 
-### 4. Set Up the Connection in Actian AI Analyst
+### 3. Set Up the Connection in Actian AI Analyst
 
 1. Click **Connections → Plus button → Select MS SQL**.
 2. Fill in the following details:

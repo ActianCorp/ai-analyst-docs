@@ -23,15 +23,15 @@ Actian AI Analyst appends your instructions to every prompt the agent receives. 
 
 You might include:
 
-* A quick summary of **what kind of data the agent works with**\
+* A quick summary of **what kind of data the agent works with**  
   (e.g. “You’re working with logistics data across warehouses, shipments, and inventory levels.”)
-* Key **business context**\
+* Key **business context**  
   (e.g. “This is a high-end furniture retailer. Products range from $200–$5000, so individual transactions are high-value.”)
-* Any high-level **data logic or rules**\
+* Any high-level **data logic or rules**  
   (e.g. “inventory\_value = retail\_price x quantity\_on\_hand”)
-* Common **pitfalls to avoid**\
+* Common **pitfalls to avoid**  
   (e.g. “Promotions may be fixed or percentage-based—always align promotion dates with order dates.”)
-* Preferred **ways to group or compare data**\
+* Preferred **ways to group or compare data**  
   (e.g. “Segment performance by store type: Flagship, Outlet, Regular.”)
 
 ***

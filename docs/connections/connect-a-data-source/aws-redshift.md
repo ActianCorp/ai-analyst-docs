@@ -56,9 +56,9 @@ More detailed info on how to do this:
 * In the EC2 Security Groups page, go to the **Inbound rules** tab.
 * Click **Edit inbound rules**.
 * Add a new rule:
-  * **Type:** Redshift (or Custom TCP)
-  * **Port:** 5439 (or your configured port)
-  * **Source:** `34.77.172.158` (Actian AI Analyst's static IP)
+     * **Type:** Redshift (or Custom TCP)
+     * **Port:** 5439 (or your configured port)
+     * **Source:** `34.77.172.158` (Actian AI Analyst's static IP)
 * Save the rule.
 
 
