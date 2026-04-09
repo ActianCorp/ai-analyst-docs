@@ -1,0 +1,7 @@
+title: Connections
+nav:
+  - Data Sources (DB/DWH): connect-a-data-source
+  - data-source-health-monitoring.md
+  - Data Catalogs: catalog
+  - Messaging Apps: messaging-apps
+  - Table Metadata: table-metadata

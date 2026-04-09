@@ -1,0 +1,10 @@
+site/
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+.env
+/tmp/
+docs/javascripts/comprehensive-nav-*.js
+docs/javascripts/comprehensive-nav-old.js
+docs/javascripts/comprehensive-nav.js.bak

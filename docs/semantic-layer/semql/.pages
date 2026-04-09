@@ -1,0 +1,8 @@
+title: Semantic SQL (SemQL)
+nav:
+  - README.md
+  - compilation-and-dialects.md
+  - core-syntax.md
+  - dimensions-vs-measures.md
+  - geo-functions.md
+  - examples.md

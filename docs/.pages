@@ -1,0 +1,12 @@
+nav:
+  - Home: index.md
+  - Quick Start: quick-start
+  - Account: account
+  - Explorer: agent/working-with-agents
+  - AI Analysts: ai-analysts
+  - Connections: connections
+  - Semantic Layer: semantic-layer
+  - Steward AI Agent: steward-ai-agent
+  - Settings: settings
+  - Governance: governance
+  - API Reference: public-api/reference

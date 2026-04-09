@@ -1,0 +1,5 @@
+title: Creating an AI Analyst
+nav:
+  - README.md
+  - Instructions: agent-instructions.md
+  - Access Management: access-management.md

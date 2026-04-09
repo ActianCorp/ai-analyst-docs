@@ -1,0 +1,10 @@
+title: Settings
+nav:
+  - general.md
+  - members.md
+  - integrations.md
+  - notifications.md
+  - security.md
+  - profile.md
+  - Billing & Usage: billing.md
+  - Public API: ../public-api

@@ -1,0 +1,7 @@
+title: Semantic Layer
+nav:
+  - overview.md
+  - models
+  - metrics.md
+  - glossary.md
+  - Semantic SQL (SemQL): semql
