@@ -69,6 +69,7 @@ Roles control what a member can see and do within your organization. Choose the 
 | Admin | Full access to Actian AI Analyst Studio — can build and edit the semantic layer, manage AI analysts, invite and remove members, and configure organization settings. |
 | User | Access to Actian AI Analyst Explorer only — can interact with AI Analysts and explore data, but cannot edit the semantic layer or access Studio settings. |
 
-{% hint style="info" %}
-Your organization must always have at least one Admin. If you are the only Admin, you will need to promote another member before you can change your own role or leave the organization.
-{% endhint %}
+!!! info
+
+    Your organization must always have at least one Admin. If you are the only Admin, you will need to promote another member before you can change your own role or leave the organization.
+

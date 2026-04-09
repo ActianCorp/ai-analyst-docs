@@ -51,11 +51,11 @@ If your Actian instance is protected by firewall or network rules, allow inbound
 
 1. Click **Connections → Plus button → Select Actian Data Platform**.
 2. Fill in the following details:
-   * **Connection string**: your Actian connection string, in the format `@<hostname>,tcp_ip,<port>::<database>` (e.g. `@av-043ios4r2921.avd.actiandatacloud.com,tcp_ip,27832::db`)
-   * **Database**: the name of the database Actian AI Analyst should connect to
-   * **Username**: `actian_analyst_user`
-   * **Password**: the password you defined earlier
-   * **Schemas**: select the schemas you granted access to in step 2
+    * **Connection string**: your Actian connection string, in the format `@<hostname>,tcp_ip,<port>::<database>` (e.g. `@av-043ios4r2921.avd.actiandatacloud.com,tcp_ip,27832::db`)
+    * **Database**: the name of the database Actian AI Analyst should connect to
+    * **Username**: `actian_analyst_user`
+    * **Password**: the password you defined earlier
+    * **Schemas**: select the schemas you granted access to in step 2
 3. Test the connection and save.
 
 ***

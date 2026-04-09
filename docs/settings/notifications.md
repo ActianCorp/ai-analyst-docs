@@ -35,9 +35,10 @@ All three alert types are enabled by default for Admins. Changes take effect imm
 
 Slack alerts let you route important notifications to a dedicated Slack channel for your whole organization. Unlike email notifications (which are per-user), Slack alerts are configured once for the entire org.
 
-{% hint style="info" %}
-Slack alerts require Slack to be connected to your organization first. If Slack has not been connected yet, you will see a prompt to set it up. Head to **Settings > Integrations** and connect your Slack workspace before configuring Slack alerts.
-{% endhint %}
+!!! info
+
+    Slack alerts require Slack to be connected to your organization first. If Slack has not been connected yet, you will see a prompt to set it up. Head to **Settings > Integrations** and connect your Slack workspace before configuring Slack alerts.
+
 
 <!-- SCREENSHOT: Settings > Slack Alerts page showing the channel dropdown and three alert toggles -->
 
@@ -47,12 +48,13 @@ To configure Slack alerts:
 2. If Slack is not yet connected, follow the prompt to connect it via **Settings > Integrations** first
 3. Use the channel dropdown to select the Slack channel where alerts should be posted — the dropdown lists all channels available in your connected workspace
 4. Toggle each alert type on or off:
-   - *Steward inbox* — a Slack message is sent when the Steward AI adds new items to the inbox (at most one message per day)
-   - *Connection failure alerts* — a Slack message is sent when a data source connection fails
-   - *High latency alerts* — a Slack message is sent when average query latency on a data source exceeds 30 seconds
+    - *Steward inbox* — a Slack message is sent when the Steward AI adds new items to the inbox (at most one message per day)
+    - *Connection failure alerts* — a Slack message is sent when a data source connection fails
+    - *High latency alerts* — a Slack message is sent when average query latency on a data source exceeds 30 seconds
 
 Toggling an alert type applies immediately for the whole organization.
 
-{% hint style="info" %}
-Only one Slack channel can be designated for alerts at a time. To change the channel, simply select a different one from the dropdown — all enabled alert types will be directed to the newly selected channel.
-{% endhint %}
+!!! info
+
+    Only one Slack channel can be designated for alerts at a time. To change the channel, simply select a different one from the dropdown — all enabled alert types will be directed to the newly selected channel.
+

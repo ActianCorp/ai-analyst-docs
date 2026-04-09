@@ -1,8 +1,9 @@
 # Deep Analysis vs Quick Analysis
 
-{% hint style="warning" %}
-Deep Analysis is currently in beta and is only available to a limited amount of users. For more information, please reach out to your account manager.
-{% endhint %}
+!!! warning
+
+    Deep Analysis is currently in beta and is only available to a limited amount of users. For more information, please reach out to your account manager.
+
 
 Deep Analysis is an advanced research mode that creates comprehensive reports for complex business questions. Unlike Quick Analysis, which provides immediate single-turn answers, Deep Analysis creates a research plan and executes multiple targeted analyses to deliver thorough insights.
 

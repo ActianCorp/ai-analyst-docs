@@ -184,9 +184,10 @@ To change how removed terms are handled, see [Removed Items Behavior](../connect
 
 Synced terms can have manual [mappings](#mappings-connecting-terms-to-your-data) added to them (connecting them to models, measures, filters, etc.), just like manually created terms. This lets you enrich catalog-sourced terminology with query-specific context.
 
-{% hint style="info" %}
-The term's name and definition are managed by the catalog. To change them, update the source in the Actian Data Intelligence Platform — the changes will be reflected in the next sync.
-{% endhint %}
+!!! info
+
+    The term's name and definition are managed by the catalog. To change them, update the source in the Actian Data Intelligence Platform — the changes will be reflected in the next sync.
+
 
 ## Glossary vs Semantic Layer Components
 

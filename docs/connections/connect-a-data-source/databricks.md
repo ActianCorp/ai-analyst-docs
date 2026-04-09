@@ -24,8 +24,8 @@ You can connect Actian AI Analyst using either of the following:
 1. In the Databricks UI, go to:\
    **Top right avatar → User Settings → Developer → Access Tokens**
 2. Click **Generate new token**
-   * Add a descriptive comment
-   * Set a reasonable lifetime
+    * Add a descriptive comment
+    * Set a reasonable lifetime
 3. **Copy the token value immediately** — it can't be viewed again.
 
 <figure><img src="../../assets/gitbook/image-18.png" alt="" width="563"><figcaption></figcaption></figure>
@@ -35,18 +35,18 @@ You can connect Actian AI Analyst using either of the following:
 ### (Option B) Use a Service Principal (OAuth)
 
 1. Create a new **Service Principal** in Azure AD
-   * Note the **Application (Client) ID** and **Tenant ID**
+    * Note the **Application (Client) ID** and **Tenant ID**
 2. Generate a **Client Secret**
-   * Go to: Certificates & Secrets → **New client secret**
-   * **Copy the secret value** (can't retrieve later)
+    * Go to: Certificates & Secrets → **New client secret**
+    * **Copy the secret value** (can't retrieve later)
 3. In Databricks:
-   * Open **Account Console** or **Workspace Admin → Service principals**
-   * Add the app (Service Principal) by its client ID
+    * Open **Account Console** or **Workspace Admin → Service principals**
+    * Add the app (Service Principal) by its client ID
 4. Assign workspace entitlements:
-   * ✅ Must have **Access to SQL**
-   * (Optional) Grant **Workspace access** if needed
+    * ✅ Must have **Access to SQL**
+    * (Optional) Grant **Workspace access** if needed
 5. Grant access to data:
-   * Add the Service Principal to a group **or** grant access directly in SQL Warehouse and Unity Catalog
+    * Add the Service Principal to a group **or** grant access directly in SQL Warehouse and Unity Catalog
 
 <figure><img src="../../assets/gitbook/image-19-1.png" alt="" width="563"><figcaption></figcaption></figure>
 

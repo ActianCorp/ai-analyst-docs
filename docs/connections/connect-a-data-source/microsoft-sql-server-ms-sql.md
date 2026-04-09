@@ -56,9 +56,9 @@ If your SQL Server is behind a firewall or uses network policies, make sure to a
 
 1. Click **Connections → Plus button → Select MS SQL**.
 2. Fill in the following details:
-   * **Host**: your SQL Server address
-   * **Port**: typically 1433
-   * **Database name**: the one where `analyst_user` has access
-   * **Username**: `analyst_login`
-   * **Password**: the password you defined earlier
+    * **Host**: your SQL Server address
+    * **Port**: typically 1433
+    * **Database name**: the one where `analyst_user` has access
+    * **Username**: `analyst_login`
+    * **Password**: the password you defined earlier
 4. Test the connection and save.

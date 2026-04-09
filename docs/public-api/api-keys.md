@@ -6,9 +6,10 @@ description: Create and manage API keys to authenticate requests to the Actian A
 
 API keys are the credentials used to authenticate requests to the [Public API](README.md). Each key is scoped to your organization and grants full access to the Public API endpoints.
 
-{% hint style="info" %}
-API key management is available to all [**Admins**](../settings/members.md).
-{% endhint %}
+!!! info
+
+    API key management is available to all [**Admins**](../settings/members.md).
+
 
 ## Creating an API key
 
@@ -21,9 +22,10 @@ API key management is available to all [**Admins**](../settings/members.md).
 
 The secret key (`sk_...`) is shown **once** immediately after creation. Copy it and store it securely — you will not be able to view it again.
 
-{% hint style="warning" %}
-Treat your API key like a password. Store it in a secrets manager or environment variable — never commit it to source control.
-{% endhint %}
+!!! warning
+
+    Treat your API key like a password. Store it in a secrets manager or environment variable — never commit it to source control.
+
 
 ## Using an API key
 
@@ -52,9 +54,10 @@ Navigate to **Studio > Settings > API Keys** to see all keys for your organizati
 | Created | When the key was created and by whom |
 | Status | Active or revoked |
 
-{% hint style="info" %}
-The secret value is never shown again after creation. If you lose a key, revoke it and create a new one.
-{% endhint %}
+!!! info
+
+    The secret value is never shown again after creation. If you lose a key, revoke it and create a new one.
+
 
 ## Revoking a key
 

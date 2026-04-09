@@ -59,9 +59,10 @@ To add a new email address:
 3. Click **Add**. A verification email will be sent to that address.
 4. Open the verification email and click the confirmation link.
 
-{% hint style="info" %}
-A new email address must be verified before it can be set as your primary address.
-{% endhint %}
+!!! info
+
+    A new email address must be verified before it can be set as your primary address.
+
 
 ---
 
@@ -77,9 +78,10 @@ To connect an account:
 
 To disconnect a provider, click **Disconnect** next to the connected account. You can always reconnect it later.
 
-{% hint style="info" %}
-If your only sign-in method is a connected account (i.e. no password is set), disconnecting it may lock you out. Set a password first under **Settings > Security** before disconnecting.
-{% endhint %}
+!!! info
+
+    If your only sign-in method is a connected account (i.e. no password is set), disconnecting it may lock you out. Set a password first under **Settings > Security** before disconnecting.
+
 
 ---
 

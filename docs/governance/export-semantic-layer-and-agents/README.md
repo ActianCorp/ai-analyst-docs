@@ -15,8 +15,8 @@ Actian AI Analyst supports exporting your semantic layer & agent configurations 
 1. Go to **Studio > Settings > Export Data**
 2. Click **Request Export**
 3. Select your format:
-   * **Actian AI Analyst Lossless** - For backups (choose YAML, JSON, or Excel)
-   * **OSI** - For interoperability (YAML only)
+    * **Actian AI Analyst Lossless** - For backups (choose YAML, JSON, or Excel)
+    * **OSI** - For interoperability (YAML only)
 4. Click **Export**
 5. You'll receive an email when the export is ready
 6. Download from the Export Data page

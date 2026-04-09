@@ -74,11 +74,11 @@ If your PostgreSQL server is protected by firewall or network rules, allow inbou
 
 1. Click **Connections → Plus button → Select PostgreSQL**.
 2. Fill in the following details:
-   * **Host**: your PostgreSQL server address
-   * **Port**: typically 5432
-   * **Database name**: the one where `analyst_login` has access
-   * **Username**: `analyst_login`
-   * **Password**: the password you defined earlier
+    * **Host**: your PostgreSQL server address
+    * **Port**: typically 5432
+    * **Database name**: the one where `analyst_login` has access
+    * **Username**: `analyst_login`
+    * **Password**: the password you defined earlier
 4. Test the connection and save.
 
 ***

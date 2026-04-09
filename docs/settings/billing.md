@@ -32,9 +32,10 @@ The following usage statistics are displayed as cards:
 | **Basic Analysis Messages** | The number of Quick Analyst messages used this month, out of your monthly allocation. |
 | **Deep Analysis Messages** | The number of Deep Analyst messages used this month, out of your monthly allocation. |
 
-{% hint style="info" %}
-If you're approaching your usage limits, consider upgrading your plan or reaching out to your account manager to discuss higher allocations.
-{% endhint %}
+!!! info
+
+    If you're approaching your usage limits, consider upgrading your plan or reaching out to your account manager to discuss higher allocations.
+
 
 ---
 
@@ -49,9 +50,10 @@ Two invoices are listed:
 - **Latest invoice** — the most recently generated invoice, including the amount, due date, and current status (e.g. Paid, Unpaid). A link to view the full invoice is provided.
 - **Next invoice** — an upcoming invoice showing the projected amount, the billing date, and the billing period it covers.
 
-{% hint style="info" %}
-If you need a full invoice history or need to update your payment method, these are available through the billing portal linked from this page.
-{% endhint %}
+!!! info
+
+    If you need a full invoice history or need to update your payment method, these are available through the billing portal linked from this page.
+
 
 ### Billing system unavailable
 

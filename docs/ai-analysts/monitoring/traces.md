@@ -6,9 +6,10 @@ description: View and inspect every conversation users have had with your AI Ana
 
 In Studio, the *Traces* tab gives [Admins](../../settings/members.md) a full log of every conversation that has taken place with an AI Analyst. Each conversation — from a user asking a question to the analyst returning an answer — is recorded as a single trace. You can browse, filter, and open any trace to replay the full conversation.
 
-{% hint style="info" %}
-Only [Admins](../../settings/members.md) can view all traces. [Users](../../settings/members.md) can only see their own conversations.
-{% endhint %}
+!!! info
+
+    Only [Admins](../../settings/members.md) can view all traces. [Users](../../settings/members.md) can only see their own conversations.
+
 
 ## Accessing Traces
 
@@ -66,6 +67,7 @@ Click the star icon on a trace to mark it for easy reference later. You can then
 
 Click *Export CSV* to download the current filtered list of traces as a spreadsheet. The export includes the question, user, timestamp, mode, channel, duration, and feedback for each trace.
 
-{% hint style="info" %}
-The export button has a short cooldown after each download to prevent duplicate exports.
-{% endhint %}
+!!! info
+
+    The export button has a short cooldown after each download to prevent duplicate exports.
+

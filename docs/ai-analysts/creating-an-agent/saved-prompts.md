@@ -10,9 +10,10 @@ Saved Prompts are human-curated, org-wide prompt templates scoped to a specific 
 
 Only [Admins](../../settings/members.md) can create, edit, or delete saved prompts.
 
-{% hint style="info" %}
-Looking for how to _use_ saved prompts as a [User](../../settings/members.md)? See [Saved Prompts in Explorer](../../agent/working-with-agents/saved-prompts.md).
-{% endhint %}
+!!! info
+
+    Looking for how to _use_ saved prompts as a [User](../../settings/members.md)? See [Saved Prompts in Explorer](../../agent/working-with-agents/saved-prompts.md).
+
 
 <figure><img src="../../assets/gitbook/image-12.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -27,9 +28,10 @@ The quickest way to add a saved prompt is directly from a result you know works:
 
 The title is auto-derived from the prompt text, but rename it to something descriptive (e.g. "Weekly Revenue by Region" rather than the raw question).
 
-{% hint style="info" %}
-Only the prompt is saved — not the answer. Answers go stale as your data changes. The value is the proven question that reliably produces a good result.
-{% endhint %}
+!!! info
+
+    Only the prompt is saved — not the answer. Answers go stale as your data changes. The value is the proven question that reliably produces a good result.
+
 
 ## Managing saved prompts in Studio
 

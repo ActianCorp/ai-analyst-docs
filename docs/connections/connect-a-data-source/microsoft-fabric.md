@@ -10,9 +10,9 @@ Actian AI Analyst can connect directly to your Microsoft Fabric data warehouse u
 
 1. Go to the **Azure Portal** → **Microsoft Entra ID** → **App registrations**.
 2. Click **New registration**.
-   * **Name**: Can be anything (e.g., `actian-analyst-fabric-access`).
-   * **Supported account types**: _Single tenant_.
-   * **Redirect URI**: Leave blank.
+    * **Name**: Can be anything (e.g., `actian-analyst-fabric-access`).
+    * **Supported account types**: _Single tenant_.
+    * **Redirect URI**: Leave blank.
 
 <figure><img src="../../assets/gitbook/image-17.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -35,7 +35,7 @@ You'll need these later for the Actian AI Analyst connection form.
 2. Under **Client secrets**, click **New client secret**.
 3. Add a description (e.g., `actian-analyst-fabric-secret`) and choose an expiry period.
 4. **Important**: Copy the **Value** (not the Secret ID) immediately and store it securely.
-   * You won't be able to view the value again once you leave the page.
+    * You won't be able to view the value again once you leave the page.
 
 
 

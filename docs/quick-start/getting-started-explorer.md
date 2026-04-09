@@ -6,9 +6,10 @@ description: Start getting answers from your data using Actian AI Analyst Explor
 
 Explorer is where you ask questions and get answers from your data — no SQL or technical knowledge needed. This guide gets you up and running in a few minutes.
 
-{% hint style="info" %}
-[Users](../settings/members.md) don't set up AI Analysts — that's done by your data team in Studio. If no one at your company has done that yet, share the [Studio quick start](getting-started-studio.md) with whoever manages your data.
-{% endhint %}
+!!! info
+
+    [Users](../settings/members.md) don't set up AI Analysts — that's done by your data team in Studio. If no one at your company has done that yet, share the [Studio quick start](getting-started-studio.md) with whoever manages your data.
+
 
 ## Step 1: Sign in
 

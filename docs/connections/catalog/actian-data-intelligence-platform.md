@@ -33,18 +33,18 @@ Before setting up the connection, you will need:
 2. Click the **+** button to add a new connection.
 3. Select **Actian Data Intelligence Platform** from the catalog connectors section.
 
-![Connector picker showing the Actian Data Intelligence Platform card in the Catalog section](../../assets/gitbook/catalog-connection-1-connector-picker.png)
+    ![Connector picker showing the Actian Data Intelligence Platform card in the Catalog section](../../assets/gitbook/catalog-connection-1-connector-picker.png)
 
 4. Fill in the connection form:
 
-| Field | Description |
-| ----- | ----------- |
-| **Connection name** | A label to identify this connection (e.g. "Production Catalog") |
-| **Hostname** | Your Actian Data Intelligence Platform instance URL (e.g. `your-org.zeenea.com`) |
-| **Project** | _(Optional)_ Limit the sync to a specific project in your catalog. Leave blank to sync all projects. |
-| **API secret** | The API token used to authenticate with your catalog |
+    | Field | Description |
+    | ----- | ----------- |
+    | **Connection name** | A label to identify this connection (e.g. "Production Catalog") |
+    | **Hostname** | Your Actian Data Intelligence Platform instance URL (e.g. `your-org.zeenea.com`) |
+    | **Project** | _(Optional)_ Limit the sync to a specific project in your catalog. Leave blank to sync all projects. |
+    | **API secret** | The API token used to authenticate with your catalog |
 
-![Connection form filled out with example values](../../assets/gitbook/catalog-connection-2-connection-form.png)
+    ![Connection form filled out with example values](../../assets/gitbook/catalog-connection-2-connection-form.png)
 
 5. Click **Test Connection** to verify that Actian AI Analyst can reach your catalog. A success message will show the number of glossary items found.
 6. Click **Save Connection**.
@@ -70,9 +70,10 @@ You can also expand each item type to see and control:
 
 Toggle off any relationship types you don't want imported.
 
-{% hint style="info" %}
-Changes to item type toggles take effect on the next sync. Click **Sync Now** to apply them immediately.
-{% endhint %}
+!!! info
+
+    Changes to item type toggles take effect on the next sync. Click **Sync Now** to apply them immediately.
+
 
 ### Setting a sync schedule
 
@@ -80,8 +81,8 @@ Use the **Periodic Sync Schedule** card to automate syncing on a regular cadence
 
 1. Enable the toggle to activate the schedule.
 2. Choose a recurrency:
-   - **Daily** — syncs every day at the time you choose
-   - **Weekly** — syncs on a specific day of the week at the time you choose
+    - **Daily** — syncs every day at the time you choose
+    - **Weekly** — syncs on a specific day of the week at the time you choose
 3. Set the sync time (in UTC).
 
 The card shows the next 5 scheduled sync dates so you can confirm the schedule is correct.
@@ -97,9 +98,10 @@ When a glossary item is removed from your catalog, Actian AI Analyst needs to de
 | **Retain** _(default)_ | The term stays in your Glossary but is marked as removed. It remains visible to data teams but is no longer used by AI Analysts. |
 | **Delete** | The term is permanently deleted from your Glossary when it is no longer found in the catalog. |
 
-{% hint style="warning" %}
-Choosing **Delete** is irreversible. Any manual edits or mappings you added to those terms will be lost.
-{% endhint %}
+!!! warning
+
+    Choosing **Delete** is irreversible. Any manual edits or mappings you added to those terms will be lost.
+
 
 ## Monitoring sync health
 

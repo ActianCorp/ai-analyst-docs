@@ -25,6 +25,7 @@ This is different from a [data source connection](../connect-a-data-source/READM
 3. Synced terms appear in your [Glossary](../../semantic-layer/glossary.md) alongside any manually created terms.
 4. AI Analysts use those terms automatically when answering questions — no extra configuration needed.
 
-{% hint style="info" %}
-Catalog connections are available on most plans. Contact your account team if you don't see the option in your Connections page.
-{% endhint %}
+!!! info
+
+    Catalog connections are available on most plans. Contact your account team if you don't see the option in your Connections page.
+

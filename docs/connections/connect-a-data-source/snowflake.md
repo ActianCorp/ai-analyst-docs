@@ -121,11 +121,11 @@ If your Snowflake server is protected by firewall or network rules, allow inboun
 
 1. Click **Connections → Plus button → Select Snowflake**.
 2. Fill in the following details:
-   * **Account name**: your Snowflake account identifier
-   * **Warehouse**: the warehouse assigned to `analyst_user`
-   * **Database & Schema**: the ones Actian AI Analyst should query
-   * **Username**: `analyst_user`
-   * **Password**: the one you set earlier
+    * **Account name**: your Snowflake account identifier
+    * **Warehouse**: the warehouse assigned to `analyst_user`
+    * **Database & Schema**: the ones Actian AI Analyst should query
+    * **Username**: `analyst_user`
+    * **Password**: the one you set earlier
 4. Test the connection and save.
 
 ***

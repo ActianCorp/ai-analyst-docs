@@ -39,9 +39,10 @@ GRANT SELECT ON your_table_name TO actian_analyst_user;
 
 Repeat this for each table you want Actian AI Analyst to access.
 
-{% hint style="info" %}
-Actian Zen uses a flat table namespace — there are no schemas. Grant access per table.
-{% endhint %}
+!!! info
+
+    Actian Zen uses a flat table namespace — there are no schemas. Grant access per table.
+
 
 ***
 
@@ -59,11 +60,11 @@ If your Actian Zen instance is protected by firewall or network rules, allow inb
 
 1. Click **Connections → Plus button → Select Actian Zen**.
 2. Fill in the following details:
-   * **Display name**: a friendly name for this connection (e.g. `Our Analytics DB`)
-   * **JDBC Connection String**: your Actian Zen host and port in the format `host:port/database` (e.g. `zen-server.example.com:1583/mydb`) — do not include the `jdbc:pervasive://` prefix
-   * **Username**: `actian_analyst_user`
-   * **Password**: the password you defined earlier
-   * **Database Name** _(optional)_: override the database name if it differs from the one in the connection string
+    * **Display name**: a friendly name for this connection (e.g. `Our Analytics DB`)
+    * **JDBC Connection String**: your Actian Zen host and port in the format `host:port/database` (e.g. `zen-server.example.com:1583/mydb`) — do not include the `jdbc:pervasive://` prefix
+    * **Username**: `actian_analyst_user`
+    * **Password**: the password you defined earlier
+    * **Database Name** _(optional)_: override the database name if it differs from the one in the connection string
 3. Test the connection and save.
 
 <figure><img src="../../assets/gitbook/actian-zen-connection-form.png" alt="Connect to Actian Zen form" width="563"><figcaption>The Actian Zen connection form</figcaption></figure>

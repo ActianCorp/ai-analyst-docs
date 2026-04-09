@@ -38,9 +38,10 @@ Wobby measures the average query duration across your data source over the past 
 
 You can enable or disable each alert type individually. Settings are per-user, so each Admin can choose which alerts they want to receive.
 
-{% hint style="info" %}
-The Notifications page is visible to all Admins. Only Admins receive alert emails.
-{% endhint %}
+!!! info
+
+    The Notifications page is visible to all Admins. Only Admins receive alert emails.
+
 
 1. In Wobby Studio, go to **Settings → Notifications**
 2. Toggle **Connection failure alerts** and/or **High latency alerts** on or off

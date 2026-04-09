@@ -19,9 +19,10 @@ The **Password** section shows whether a password is currently set on your accou
 
 Both actions open a modal where you can enter your **current password** (if one exists), your **new password**, and a **confirmation** of the new password.
 
-{% hint style="info" %}
-If you signed up via Google or Microsoft OAuth and have never set a password, you can use **Set password** to add one. This gives you an additional sign-in option.
-{% endhint %}
+!!! info
+
+    If you signed up via Google or Microsoft OAuth and have never set a password, you can use **Set password** to add one. This gives you an additional sign-in option.
+
 
 ---
 
@@ -37,9 +38,10 @@ Two-factor authentication adds a second verification step when signing in, prote
 4. Save your **backup codes** — copy them to a safe place before continuing. These codes let you access your account if you ever lose access to your authenticator app.
 5. Click **Done** to complete the setup.
 
-{% hint style="warning" %}
-Backup codes are shown only once. Store them somewhere secure — for example, a password manager or printed in a safe location. Each backup code can only be used once.
-{% endhint %}
+!!! warning
+
+    Backup codes are shown only once. Store them somewhere secure — for example, a password manager or printed in a safe location. Each backup code can only be used once.
+
 
 ### Removing 2FA
 
@@ -61,6 +63,7 @@ To sign out a session you don't recognize or no longer need, click **Sign out** 
 
 <!-- SCREENSHOT: Active devices list on Settings > Security page -->
 
-{% hint style="info" %}
-Your current session is labeled **This device** and cannot be signed out from this page. To end your current session, use the sign-out option in the navigation menu.
-{% endhint %}
+!!! info
+
+    Your current session is labeled **This device** and cannot be signed out from this page. To end your current session, use the sign-out option in the navigation menu.
+

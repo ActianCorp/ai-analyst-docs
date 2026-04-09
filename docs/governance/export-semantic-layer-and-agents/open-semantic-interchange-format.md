@@ -32,9 +32,10 @@ OSI is a lightweight interchange format. The following Actian AI Analyst-specifi
 * **Enum value descriptions** - Only values are listed
 * **Sample data** - Not part of OSI spec
 
-{% hint style="info" %}
-For complete backups that preserve all details, use the **Actian AI Analyst Lossless** format instead.
-{% endhint %}
+!!! info
+
+    For complete backups that preserve all details, use the **Actian AI Analyst Lossless** format instead.
+
 
 ### OSI Output Example
 

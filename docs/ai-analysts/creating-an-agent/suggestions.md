@@ -2,9 +2,10 @@
 
 Suggestions are pre-configured questions that appear in Actian AI Analyst Explorer to help users get started with your agent. They serve as conversation starters and showcase what your agent can do.
 
-{% hint style="info" %}
-Looking for a way to save and reuse your team's proven queries? That's [Saved Prompts](../../agent/working-with-agents/saved-prompts.md) — a separate feature designed for retrieval of known-good questions, rather than discovery.
-{% endhint %}
+!!! info
+
+    Looking for a way to save and reuse your team's proven queries? That's [Saved Prompts](../../agent/working-with-agents/saved-prompts.md) — a separate feature designed for retrieval of known-good questions, rather than discovery.
+
 
 <figure><img src="../../assets/gitbook/image-11.png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -18,9 +18,10 @@ Integrations are organized by category. Currently, one category is available:
 
 Use the search input or the category filter at the top of the page to find a specific integration. Each integration is shown as a card displaying its name, description, and current connection status.
 
-{% hint style="info" %}
-This page handles connecting integrations at the organization level. To assign an AI Analyst to a specific Slack or Teams channel, go to the agent's **Share** settings. To configure which Slack channel receives health check and Steward alerts, go to [Settings > Notifications](notifications.md).
-{% endhint %}
+!!! info
+
+    This page handles connecting integrations at the organization level. To assign an AI Analyst to a specific Slack or Teams channel, go to the agent's **Share** settings. To configure which Slack channel receives health check and Steward alerts, go to [Settings > Notifications](notifications.md).
+
 
 ---
 

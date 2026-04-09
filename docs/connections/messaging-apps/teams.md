@@ -14,9 +14,10 @@ Bring Actian AI Analyst's AI agents directly into your Microsoft Teams workspace
 * **System administrator rights:** Integration setup must be completed by a system administrator on your Microsoft Tenant.
 * **Teams Permissions:** You must have permission to upload custom apps in Teams. This may require your Teams system administrator to update app policies.
 
-{% hint style="info" %}
-For most organizations, uploading a custom app is restricted. If you can't upload, ask your Teams system administrator to enable "Upload custom apps" for your user.
-{% endhint %}
+!!! info
+
+    For most organizations, uploading a custom app is restricted. If you can't upload, ask your Teams system administrator to enable "Upload custom apps" for your user.
+
 
 ***
 
@@ -44,8 +45,8 @@ To upload the Actian AI Analyst bot, your Teams policy must allow custom app upl
 1. Open the **Microsoft Teams Admin Center**.
 2. Navigate to **Teams Apps** → **Permission policies**.
 3. Edit (or create) a policy for your user:
-   * Set **Upload custom apps** to **On**.
-   * Apply the policy to your account.
+    * Set **Upload custom apps** to **On**.
+    * Apply the policy to your account.
 
 <figure><img src="../../assets/gitbook/image-1-1-1.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -56,15 +57,16 @@ To upload the Actian AI Analyst bot, your Teams policy must allow custom app upl
 1. Open the **Teams desktop app**.
 2. Go to **Apps** → **Manage your apps** → **Upload an app**.
 3. Choose how you want to upload:
-   * **Upload a custom app:**\
+    * **Upload a custom app:**\
      Makes the bot available for you to add to specific channels.
-   * **Upload an app to your org's app catalog:**\
+    * **Upload an app to your org's app catalog:**\
      Makes the bot available for all users in your organization. (Recommended for team-wide use.)
 4. Select `teams-bot-package.zip` and click **Add**.
 
-{% hint style="warning" %}
-Personal chats (DMs) and group chats are not supported. The bot only works in standard Teams channels. Make sure to add it to a channel, not a DM or group chat.
-{% endhint %}
+!!! warning
+
+    Personal chats (DMs) and group chats are not supported. The bot only works in standard Teams channels. Make sure to add it to a channel, not a DM or group chat.
+
 
 <figure><img src="../../assets/gitbook/image-2-1.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -78,9 +80,10 @@ Personal chats (DMs) and group chats are not supported. The bot only works in st
 * To add to a channel:
   * Pick the desired channel when prompted during upload, or add the bot to a channel later via Teams.
 
-{% hint style="info" %}
-The bot can support multiple agents. Each channel can have its own assigned agent.
-{% endhint %}
+!!! info
+
+    The bot can support multiple agents. Each channel can have its own assigned agent.
+
 
 <figure><img src="../../assets/gitbook/image-4.png" alt="" width="310"><figcaption></figcaption></figure>
 
@@ -92,11 +95,12 @@ The bot can support multiple agents. Each channel can have its own assigned agen
 2. Click **Deploy** → **Deploy to Teams**.
 3. Select the Teams channel and link it to your agent.
 
-<figure><img src="../../assets/gitbook/image-5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/gitbook/image-5.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-The bot will only respond in the channel you link here. This is by design — it lets you control exactly who has access to which agent and the data it can query. If someone tags the bot in a different channel, they'll receive a message letting them know it isn't available there.
-{% endhint %}
+!!! info
+
+    The bot will only respond in the channel you link here. This is by design — it lets you control exactly who has access to which agent and the data it can query. If someone tags the bot in a different channel, they'll receive a message letting them know it isn't available there.
+
 
 ***
 

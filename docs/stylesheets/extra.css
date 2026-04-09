@@ -103,7 +103,7 @@ body,
 .md-header__topic {
   color: var(--color-accent) !important;
   font-family: var(--md-text-font);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .md-header__button {

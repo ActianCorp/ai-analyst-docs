@@ -8,9 +8,10 @@ description: >-
 
 Saved Prompts are a shared library of your team's proven, go-to queries for a specific AI Analyst. Instead of retyping the same question every time — or trying to remember exactly how you phrased a question that produced a great result — [Admins](../../settings/members.md) can save those prompts once and make them available to everyone in the organisation.
 
-{% hint style="info" %}
-Saved Prompts are org-wide and scoped to a specific AI Analyst. Everyone in your workspace can access and run them. Only Admins can create, edit, or delete them — see [Managing Saved Prompts](../../ai-analysts/creating-an-agent/saved-prompts.md) for the Studio side.
-{% endhint %}
+!!! info
+
+    Saved Prompts are org-wide and scoped to a specific AI Analyst. Everyone in your workspace can access and run them. Only Admins can create, edit, or delete them — see [Managing Saved Prompts](../../ai-analysts/creating-an-agent/saved-prompts.md) for the Studio side.
+
 
 ## The Explorer homepage
 
@@ -23,9 +24,10 @@ Click the **Saved prompts** tab to browse the list. Each entry shows the prompt 
 
 Click any saved prompt to immediately start a new conversation with that prompt pre-filled.
 
-{% hint style="info" %}
-If the agent has no saved prompts yet, the tab will show: _"No saved prompts yet. Admins can save prompts from any completed conversation."_
-{% endhint %}
+!!! info
+
+    If the agent has no saved prompts yet, the tab will show: _"No saved prompts yet. Admins can save prompts from any completed conversation."_
+
 
 ## The / trigger — access prompts mid-conversation
 

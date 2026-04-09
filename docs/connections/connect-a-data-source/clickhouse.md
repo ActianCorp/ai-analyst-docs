@@ -66,13 +66,13 @@ If your ClickHouse server is protected by firewall or network rules, allow inbou
 
 1. Click **Connections → Plus button → Select ClickHouse**.
 2. Fill in the following details:
-   * **Host**: your ClickHouse server hostname or IP address
-   * **Port**: default is `8123` (HTTP) or `8443` (HTTPS/SSL) — leave as default unless your instance uses a custom port
-   * **Database**: the default database Actian AI Analyst should connect to
-   * **Database schemas**: select the databases Actian AI Analyst is allowed to query
-   * **Username**: `analyst_user`
-   * **Password**: the secure password you set
-   * **SSL**: enable if your ClickHouse instance requires encrypted connections
+    * **Host**: your ClickHouse server hostname or IP address
+    * **Port**: default is `8123` (HTTP) or `8443` (HTTPS/SSL) — leave as default unless your instance uses a custom port
+    * **Database**: the default database Actian AI Analyst should connect to
+    * **Database schemas**: select the databases Actian AI Analyst is allowed to query
+    * **Username**: `analyst_user`
+    * **Password**: the secure password you set
+    * **SSL**: enable if your ClickHouse instance requires encrypted connections
 3. Test the connection and click **Save**.
 
 > 📌 **ClickHouse Cloud users**: If your host ends in `.clickhouse.cloud`, Actian AI Analyst will automatically enable SSL and switch the port to `8443`.

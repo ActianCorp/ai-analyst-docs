@@ -55,9 +55,10 @@ The danger zone contains actions that are irreversible or have a significant imp
 
 Any member can leave the organization at any time using the *Leave Organization* button. Once you leave, you will immediately lose access to all workspaces, data, and AI analysts within that organization.
 
-{% hint style="info" %}
-If you are the only Admin in the organization, the *Leave Organization* button will be disabled. You must first promote another member to Admin before you can leave.
-{% endhint %}
+!!! info
+
+    If you are the only Admin in the organization, the *Leave Organization* button will be disabled. You must first promote another member to Admin before you can leave.
+
 
 ### Delete organization
 
@@ -70,6 +71,7 @@ To delete your organization:
 3. In the confirmation dialog, type the exact name of your organization to confirm.
 4. Click the confirm button to proceed.
 
-{% hint style="warning" %}
-Deleting your organization is permanent and cannot be undone. All data — including your semantic layer, AI analysts, conversation history, and member accounts — will be immediately and irreversibly removed. Make sure you have any necessary exports before proceeding.
-{% endhint %}
+!!! warning
+
+    Deleting your organization is permanent and cannot be undone. All data — including your semantic layer, AI analysts, conversation history, and member accounts — will be immediately and irreversibly removed. Make sure you have any necessary exports before proceeding.
+

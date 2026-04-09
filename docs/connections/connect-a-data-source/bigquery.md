@@ -24,8 +24,8 @@ To connect your Google BigQuery project to Actian AI Analyst, follow these steps
 3. Name it something like `analyst-access`.
 4. Skip granting roles at this stage (you’ll assign dataset-specific roles next).
 5. After creation, go to the account and **create a JSON key**:
-   * Click **Keys** tab → **Add Key** → **Create New Key (JSON)**.
-   * Save the JSON file. You’ll upload this to Actian AI Analyst in the next step.
+    * Click **Keys** tab → **Add Key** → **Create New Key (JSON)**.
+    * Save the JSON file. You’ll upload this to Actian AI Analyst in the next step.
 
 ***
 
@@ -82,9 +82,9 @@ You’ll upload this file directly in the Actian AI Analyst interface to authent
 
 1. Click **Connections → Plus button → Select BigQuery**.
 2. Fill in the following details:
-   * **Project ID**: your Google Cloud project
-   * **Default Dataset**: the one Actian AI Analyst should start with
-   * **Service Account Key**: paste the JSON key file
+    * **Project ID**: your Google Cloud project
+    * **Default Dataset**: the one Actian AI Analyst should start with
+    * **Service Account Key**: paste the JSON key file
 3. Test the connection and save.
 
 > 📂 Actian AI Analyst will respect the access scopes set in BigQuery—only querying what the service account can see.

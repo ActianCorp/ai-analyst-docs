@@ -63,12 +63,12 @@ GRANT SELECT ON your_database.customer_summary TO 'analyst_user'@'%';
 
 1. Click **Connections → Plus button → Select MySQL**.
 2. Fill in the following details:
-   * **Host:** your MySQL server hostname or IP address
-   * **Port:** default is `3306` unless changed
-   * **Database:** the default database Actian AI Analyst should use
-   * **Username:** `analyst_user`
-   * **Password:** the secure password you set
-   * **SSL:** enable if your MySQL instance requires encrypted connections
+    * **Host:** your MySQL server hostname or IP address
+    * **Port:** default is `3306` unless changed
+    * **Database:** the default database Actian AI Analyst should use
+    * **Username:** `analyst_user`
+    * **Password:** the secure password you set
+    * **SSL:** enable if your MySQL instance requires encrypted connections
 4. Test the connection and click **Save**.
 
 📂 Actian AI Analyst only queries the data the user can see—if the user doesn't have access, Actian AI Analyst won't either.

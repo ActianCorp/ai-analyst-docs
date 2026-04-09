@@ -6,9 +6,10 @@ description: A clear explanation of how AI Analyst processes your data, what is 
 
 This page explains exactly what happens to your data when you use AI Analyst — from the moment a user asks a question to the answer that appears on screen. It is written for IT, security, and governance teams evaluating the platform.
 
-{% hint style="info" %}
-**In short:** AI Analyst reads from your database using encrypted, read-only connections. Your data is never copied to our systems. Nothing is ever used to train AI models.
-{% endhint %}
+!!! info
+
+    **In short:** AI Analyst reads from your database using encrypted, read-only connections. Your data is never copied to our systems. Nothing is ever used to train AI models.
+
 
 ***
 
@@ -90,9 +91,10 @@ sequenceDiagram
 - The actual rows of data in your tables
 - Any personally identifiable information or business records
 
-{% hint style="info" %}
-When Steward inspects a table to suggest models, it reads column names and types — not the data inside the rows. Your actual business data is never sent to an AI provider during this process.
-{% endhint %}
+!!! info
+
+    When Steward inspects a table to suggest models, it reads column names and types — not the data inside the rows. Your actual business data is never sent to an AI provider during this process.
+
 
 ***
 
