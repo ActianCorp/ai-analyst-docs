@@ -69,23 +69,48 @@
 
   <div id="scalar-app"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@latest/dist/browser/standalone.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
 
   <script>
+    // Resolve URLs relative to the current page
     var base    = window.location.href;
-    var specUrl = new URL('../../assets/wobby-api.openapi.yaml', base).href;
+    var specUrl = new URL('../../assets/wobby-api.openapi.json', base).href;
     var homeUrl = new URL('../../index.html', base).href;
     document.getElementById('home-link').href = homeUrl;
 
-    Scalar.createApiReference('#scalar-app', {
-      url: specUrl,
-      theme: 'default',
-      layout: 'default',
-      defaultHttpClient: { targetKey: 'shell', clientKey: 'curl' },
-      hideDownloadButton: false,
-      showSidebar: true,
-      authentication: { preferredSecurityScheme: 'BearerAuth' }
-    });
+    function showError(msg, detail) {
+      document.getElementById('scalar-app').innerHTML =
+        '<div style="padding:4rem 2rem;text-align:center;font-family:sans-serif;color:#666;">' +
+        '<p style="font-size:1.1em;">' + msg + '</p>' +
+        '<p style="font-size:0.85em;color:#999;word-break:break-all;">' + detail + '</p>' +
+        '</div>';
+    }
+
+    if (typeof Scalar === 'undefined' || typeof Scalar.createApiReference !== 'function') {
+      showError('API reference library failed to load.', 'Check your network connection and try reloading.');
+    } else {
+      // Fetch the spec ourselves so we control MIME/CORS handling,
+      // then pass content directly to Scalar to avoid Scalar's own fetch.
+      fetch(specUrl)
+        .then(function(resp) {
+          if (!resp.ok) throw new Error('HTTP ' + resp.status + ' fetching ' + specUrl);
+          return resp.text();
+        })
+        .then(function(content) {
+          Scalar.createApiReference('#scalar-app', {
+            spec: { content: content },
+            theme: 'default',
+            layout: 'default',
+            defaultHttpClient: { targetKey: 'shell', clientKey: 'curl' },
+            hideDownloadButton: false,
+            showSidebar: true,
+            authentication: { preferredSecurityScheme: 'BearerAuth' }
+          });
+        })
+        .catch(function(err) {
+          showError('Could not load API spec.', err.message + ' — Spec URL: ' + specUrl);
+        });
+    }
   </script>
 
 </body>

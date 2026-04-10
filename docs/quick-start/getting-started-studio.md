@@ -29,7 +29,7 @@ AI Analysts need access to your data before they can answer questions.
 2. Click **Add connection** and select your data source (PostgreSQL, Snowflake, BigQuery, etc.)
 3. Enter your connection credentials and save
 
-See [Connect a data source](../connections/connect-a-data-source/) for detailed instructions per database type.
+See [Connect a data source](../connections/connect-a-data-source/README.md) for detailed instructions per database type.
 
 ## Step 3: Build your semantic layer
 
@@ -40,7 +40,7 @@ The semantic layer is what keeps your AI Analyst accurate — it maps your raw t
 3. Add **Dimensions** (descriptive attributes like `region` or `customer_tier`) and **Measures** (numeric calculations like `total_revenue`)
 4. Optionally add **Metrics** for your most important KPIs
 
-See [Models](../semantic-layer/models/) and [Metrics](../semantic-layer/metrics.md) to go deeper.
+See [Models](../semantic-layer/models/README.md) and [Metrics](../semantic-layer/metrics.md) to go deeper.
 
 ## Step 4: Create an AI Analyst
 

@@ -1,0 +1,342 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Actian AI Analyst",
+    "version": "0.1.0",
+    "description": "Actian AI Analyst API",
+    "x-gitbook-description-document": {
+      "object": "document",
+      "data": {
+        "schemaVersion": 9
+      },
+      "nodes": [
+        {
+          "object": "block",
+          "type": "paragraph",
+          "isVoid": false,
+          "data": {},
+          "nodes": [
+            {
+              "object": "text",
+              "leaves": [
+                {
+                  "object": "leaf",
+                  "text": "Actian AI Analyst API",
+                  "marks": []
+                }
+              ],
+              "key": "WmVeL3uuWlFj"
+            }
+          ],
+          "key": "ROIKRtnh1Lpf"
+        }
+      ],
+      "key": "84ihd2150MOT"
+    },
+    "x-gitbook-description-html": "<p>Actian AI Analyst API</p>"
+  },
+  "servers": [
+    {
+      "url": "https://app.wobby.ai",
+      "variables": {}
+    }
+  ],
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ],
+  "paths": {
+    "/api/public/v1/environment": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "entities",
+            "description": "Comma-separated list of entity types to include. Valid values: models, relationships, metrics, glossary, ai_analysts. Defaults to all.",
+            "schema": {
+              "type": "string",
+              "example": "models,relationships,metrics,glossary,ai_analysts"
+            },
+            "x-gitbook-description-html": "<p>Comma-separated list of entity types to include. Valid values: models, relationships, metrics, glossary, ai_analysts. Defaults to all.</p>"
+          },
+          {
+            "in": "query",
+            "name": "format",
+            "description": "Output format. Defaults to json.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json",
+                "yaml"
+              ],
+              "default": "json"
+            },
+            "x-gitbook-description-html": "<p>Output format. Defaults to json.</p>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Environment export",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string",
+                      "example": "1.0"
+                    },
+                    "exported_at": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "models": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": "Models with dimensions, measures, filters, and grain",
+                      "x-gitbook-description-html": "<p>Models with dimensions, measures, filters, and grain</p>"
+                    },
+                    "relationships": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": "Relationships between models",
+                      "x-gitbook-description-html": "<p>Relationships between models</p>"
+                    },
+                    "metrics": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": "Defined metrics with expressions and joins",
+                      "x-gitbook-description-html": "<p>Defined metrics with expressions and joins</p>"
+                    },
+                    "glossary": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": "Glossary terms with definitions and mappings",
+                      "x-gitbook-description-html": "<p>Glossary terms with definitions and mappings</p>"
+                    },
+                    "ai_analysts": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      },
+                      "description": "AI analysts with semantic layer access configuration",
+                      "x-gitbook-description-html": "<p>AI analysts with semantic layer access configuration</p>"
+                    }
+                  }
+                }
+              }
+            },
+            "x-gitbook-description-html": "<p>Environment export</p>"
+          },
+          "400": {
+            "description": "No environment context available",
+            "x-gitbook-description-html": "<p>No environment context available</p>"
+          },
+          "401": {
+            "description": "Unauthorized \u2014 missing or invalid API key",
+            "x-gitbook-description-html": "<p>Unauthorized \u2014 missing or invalid API key</p>"
+          }
+        },
+        "tags": [
+          "Environment"
+        ],
+        "description": "Export the full environment configuration including models, relationships, metrics, glossary terms, and AI analysts. Supports filtering by entity type and output format.",
+        "x-gitbook-description-document": {
+          "object": "document",
+          "data": {
+            "schemaVersion": 9
+          },
+          "nodes": [
+            {
+              "object": "block",
+              "type": "paragraph",
+              "isVoid": false,
+              "data": {},
+              "nodes": [
+                {
+                  "object": "text",
+                  "leaves": [
+                    {
+                      "object": "leaf",
+                      "text": "Export the full environment configuration including models, relationships, metrics, glossary terms, and AI analysts. Supports filtering by entity type and output format.",
+                      "marks": []
+                    }
+                  ],
+                  "key": "qspCmfk8tY7E"
+                }
+              ],
+              "key": "9qkLczgcBVGt"
+            }
+          ],
+          "key": "q3ZpKmR1bTox"
+        },
+        "x-gitbook-description-html": "<p>Export the full environment configuration including models, relationships, metrics, glossary terms, and AI analysts. Supports filtering by entity type and output format.</p>"
+      },
+      "put": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Sync summary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "created": {
+                      "type": "integer",
+                      "description": "Number of entities created",
+                      "x-gitbook-description-html": "<p>Number of entities created</p>"
+                    },
+                    "updated": {
+                      "type": "integer",
+                      "description": "Number of entities updated",
+                      "x-gitbook-description-html": "<p>Number of entities updated</p>"
+                    },
+                    "deleted": {
+                      "type": "integer",
+                      "description": "Number of orphaned entities deleted (0 if orphaned=keep)",
+                      "x-gitbook-description-html": "<p>Number of orphaned entities deleted (0 if orphaned=keep)</p>"
+                    },
+                    "unchanged": {
+                      "type": "integer",
+                      "description": "Number of entities that were already up to date",
+                      "x-gitbook-description-html": "<p>Number of entities that were already up to date</p>"
+                    }
+                  }
+                }
+              }
+            },
+            "x-gitbook-description-html": "<p>Sync summary</p>"
+          },
+          "400": {
+            "description": "No environment context available",
+            "x-gitbook-description-html": "<p>No environment context available</p>"
+          },
+          "401": {
+            "description": "Unauthorized \u2014 missing or invalid API key",
+            "x-gitbook-description-html": "<p>Unauthorized \u2014 missing or invalid API key</p>"
+          },
+          "422": {
+            "description": "Validation error \u2014 one or more referenced data sources do not exist",
+            "x-gitbook-description-html": "<p>Validation error \u2014 one or more referenced data sources do not exist</p>"
+          }
+        },
+        "tags": [
+          "Environment"
+        ],
+        "description": "Sync (upsert) the environment configuration from a JSON payload. Supports models, relationships, metrics, glossary terms, and AI analysts. Only include the entity types you want to sync \u2014 omitted types are left untouched. Blocks if any referenced data source does not exist.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "models": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "Models to create or update (matched by name)",
+                    "x-gitbook-description-html": "<p>Models to create or update (matched by name)</p>"
+                  },
+                  "relationships": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "Relationships between models",
+                    "x-gitbook-description-html": "<p>Relationships between models</p>"
+                  },
+                  "metrics": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "Metrics to create or update (matched by name)",
+                    "x-gitbook-description-html": "<p>Metrics to create or update (matched by name)</p>"
+                  },
+                  "glossary": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "Glossary terms to create or update (matched by term)",
+                    "x-gitbook-description-html": "<p>Glossary terms to create or update (matched by term)</p>"
+                  },
+                  "ai_analysts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "AI analysts to create or update (matched by name)",
+                    "x-gitbook-description-html": "<p>AI analysts to create or update (matched by name)</p>"
+                  },
+                  "orphaned": {
+                    "type": "string",
+                    "enum": [
+                      "keep",
+                      "delete"
+                    ],
+                    "default": "keep",
+                    "description": "What to do with existing entities not present in the payload. \"delete\" removes them, \"keep\" (default) leaves them.",
+                    "x-gitbook-description-html": "<p>What to do with existing entities not present in the payload. \"delete\" removes them, \"keep\" (default) leaves them.</p>"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-gitbook-description-document": {
+          "object": "document",
+          "data": {
+            "schemaVersion": 9
+          },
+          "nodes": [
+            {
+              "object": "block",
+              "type": "paragraph",
+              "isVoid": false,
+              "data": {},
+              "nodes": [
+                {
+                  "object": "text",
+                  "leaves": [
+                    {
+                      "object": "leaf",
+                      "text": "Sync (upsert) the environment configuration from a JSON payload. Supports models, relationships, metrics, glossary terms, and AI analysts. Only include the entity types you want to sync \u2014 omitted types are left untouched. Blocks if any referenced data source does not exist.",
+                      "marks": []
+                    }
+                  ],
+                  "key": "bFEKrR6B1oTx"
+                }
+              ],
+              "key": "ENntjhEQRRVU"
+            }
+          ],
+          "key": "YBGuBsfumyhT"
+        },
+        "x-gitbook-description-html": "<p>Sync (upsert) the environment configuration from a JSON payload. Supports models, relationships, metrics, glossary terms, and AI analysts. Only include the entity types you want to sync \u2014 omitted types are left untouched. Blocks if any referenced data source does not exist.</p>"
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "API key obtained from Settings > API Keys. Pass as: Authorization: Bearer <your-api-key>",
+        "x-gitbook-description-html": "<p>API key obtained from Settings > API Keys. Pass as: Authorization: Bearer </p>"
+      }
+    }
+  }
+}

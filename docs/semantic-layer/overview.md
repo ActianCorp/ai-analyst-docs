@@ -24,7 +24,7 @@ When someone asks your AI agent "How many active customers do we have?", the Sem
 
 ### 1. Models
 
-[**Learn more about Models →**](models/)
+[**Learn more about Models →**](models/README.md)
 
 Models represent your core business entities—customers, orders, products, transactions, users. Each model connects to a table or view in your data warehouse and defines:
 
@@ -35,7 +35,7 @@ Models represent your core business entities—customers, orders, products, tran
 
 **Example**: A `customers` model might include dimensions like `customer_tier` and `created_at`, measures like `total_customers`, and filters like `premium_customers_only`.
 
-[Go to Models documentation →](models/)
+[Go to Models documentation →](models/README.md)
 
 ### 2. Metrics
 
