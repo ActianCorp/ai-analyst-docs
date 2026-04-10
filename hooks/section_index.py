@@ -11,6 +11,7 @@ navigation.tabs is active.
 """
 import os
 import posixpath
+from collections import Counter
 
 _redirects = {}  # section_dir (relative to site) -> first_page_path (relative to site)
 
@@ -50,9 +51,14 @@ def on_nav(nav, config, files):
             page_dirs = [posixpath.dirname(d) for d in all_dests]
             section_dir = _common_ancestor(page_dirs)
             if not section_dir:
-                # Fallback for cross-directory sections (e.g. Settings which
-                # spans settings/ and public-api/): use the first page's dir.
-                section_dir = posixpath.dirname(first_dest)
+                # Fallback for cross-directory sections (e.g. AI Analysts which
+                # spans agent/ and ai-analysts/): use the top-level directory
+                # that contains the most pages as the section root.
+                tops = [d.split("/")[0] for d in page_dirs if d]
+                if tops:
+                    section_dir = Counter(tops).most_common(1)[0][0]
+                if not section_dir:
+                    section_dir = posixpath.dirname(first_dest)
 
             if section_dir:
                 _redirects[section_dir] = first_dest
@@ -75,6 +81,7 @@ def on_post_build(config):
             "<head>\n"
             f'<meta http-equiv="refresh" content="0; url={first_page_rel}">\n'
             f'<link rel="canonical" href="{first_page_rel}"/>\n'
+            f'<script>window.location.replace("{first_page_rel}");</script>\n'
             "</head>\n"
             "<body><p>Redirecting...</p></body>\n"
             "</html>\n"
