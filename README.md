@@ -4,7 +4,7 @@
 
 **Repository:** https://github.com/ActianCorp/ai-analyst-docs  
 **Branch:** `main`  
-**Live site:** https://docs.wobby.ai/
+**Live site:** https://docs.actian.com/ai-analyst/
 
 ---
 
@@ -315,4 +315,4 @@ mike serve
 - [Material Reference](https://squidfunk.github.io/mkdocs-material/reference/)
 - [Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
 - [mike — Versioning](https://github.com/jimporter/mike)
-- [Actian AI Analyst](https://docs.wobby.ai/)
+- [Actian AI Analyst](https://docs.actian.com/ai-analyst/)

@@ -4,27 +4,27 @@ description: Automatic monitoring of your data source connections, with email al
 
 # Data Source Health Monitoring
 
-Wobby automatically monitors your connected data sources every day. If a connection fails or query performance degrades significantly, Wobby sends an email alert to your organization's [Admins](../settings/members.md) so you can fix issues before they affect your team's analysis.
+AI Analyst automatically monitors your connected data sources every day. If a connection fails or query performance degrades significantly, AI Analyst sends an email alert to your organization's [Admins](../settings/members.md) so you can fix issues before they affect your team's analysis.
 
 ***
 
 ## What gets monitored
 
-Wobby runs two types of checks on each data source daily:
+AI Analyst runs two types of checks on each data source daily:
 
 ### Connection failure alerts
 
-Wobby tests whether each data source is reachable. If a connection fails, all Admins with this alert enabled receive an email notification.
+AI Analyst tests whether each data source is reachable. If a connection fails, all Admins with this alert enabled receive an email notification.
 
 **Key behaviours:**
 
 - The alert is sent *once per outage* — you won't receive repeated emails for the same ongoing failure
 - When the connection recovers, the alert resets and will fire again if a future failure occurs
-- The email includes a direct link to the affected data source in Wobby Studio
+- The email includes a direct link to the affected data source in AI Analyst Studio
 
 ### High latency alerts
 
-Wobby measures the average query duration across your data source over the past 7 days. If the average exceeds **30 seconds**, an alert is sent.
+AI Analyst measures the average query duration across your data source over the past 7 days. If the average exceeds **30 seconds**, an alert is sent.
 
 **Key behaviours:**
 
@@ -43,7 +43,7 @@ You can enable or disable each alert type individually. Settings are per-user, s
     The Notifications page is visible to all Admins. Only Admins receive alert emails.
 
 
-1. In Wobby Studio, go to **Settings → Notifications**
+1. In AI Analyst Studio, go to **Settings → Notifications**
 2. Toggle **Connection failure alerts** and/or **High latency alerts** on or off
 
 Both alerts are enabled by default for all Admins.
