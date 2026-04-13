@@ -639,3 +639,27 @@ pre code {
 [data-md-url*="public-api/reference"] .md-sidebar--secondary {
   display: none !important;
 }
+
+/* ═══════════════════════════════════════════════
+   CENTERED LAYOUT — like squidfunk.github.io/mkdocs-material
+   Overrides style.css which sets .md-grid to max-width: 100%
+   causing content to stretch full-width on wide screens.
+   76.25rem = 1220px (Material's default grid max-width)
+   ═══════════════════════════════════════════════ */
+.md-grid {
+  max-width: 76.25rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Content inner: comfortable reading width between sidebars */
+.md-content__inner {
+  padding-left: 1.6rem !important;
+  padding-right: 1.6rem !important;
+}
+
+/* Content padding overrides the 2rem from style.css for better proportions */
+.md-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
