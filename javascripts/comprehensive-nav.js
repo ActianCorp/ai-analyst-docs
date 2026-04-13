@@ -202,6 +202,7 @@
         var isActive = currentPath.indexOf(page.href.replace(/\/index\.html$/, '').replace(/\.html$/, '')) !== -1;
         a.className = 'cn-sublink cn-sublink--parent' + (isActive ? ' cn-sublink--active' : '');
         a.textContent = page.name;
+        if (page.href.indexOf('public-api/reference') !== -1) { a.setAttribute('data-instant-skip', ''); }
         row.appendChild(a);
 
         var arrow = document.createElement('span');
@@ -234,6 +235,7 @@
                        && page.href.replace(/\/index\.html$/, '').replace(/\.html$/, '').length > 5;
         a.className = 'cn-sublink' + (isActive ? ' cn-sublink--active' : '');
         a.textContent = page.name;
+        if (page.href.indexOf('public-api/reference') !== -1) { a.setAttribute('data-instant-skip', ''); }
         li.appendChild(a);
       }
 
@@ -270,6 +272,10 @@
       link.href = base + section.href;
       link.className = 'cn-label' + (isCurrentSection ? ' cn-label--active' : '');
       link.textContent = section.label;
+      // Standalone pages (not Material layout) must bypass instant navigation
+      if (section.key === 'public-api/reference') {
+        link.setAttribute('data-instant-skip', '');
+      }
       header.appendChild(link);
 
       var arrow = document.createElement('span');
