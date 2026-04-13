@@ -97,3 +97,11 @@ window.document$.subscribe(function() {
         skipBtn.addEventListener("click", showThanks);
     });
 })
+
+// Force full-page navigation for the standalone API reference page
+// (bypasses MkDocs instant navigation which can't handle standalone HTML docs)
+window.document$.subscribe(function() {
+    document.querySelectorAll('a[href*="public-api/reference"]').forEach(function(link) {
+        link.setAttribute('data-instant-skip', '');
+    });
+})
