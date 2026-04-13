@@ -1,0 +1,263 @@
+/* ============================================
+   Custom Comprehensive Navigation (cn-nav)
+   ============================================ */
+
+.cn-nav {
+  padding: 0 0.5rem 1rem 0.5rem;
+  margin-top: -0.6rem;
+}
+
+/* Section item wrapper */
+.cn-item {
+  margin-bottom: 0.1rem;
+}
+
+/* Section header row */
+.cn-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.cn-header:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Section label link */
+.cn-label {
+  font-size: 0.65rem;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+.cn-label:hover {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.cn-label--active,
+.cn-item--active .cn-label {
+  color: var(--md-primary-fg-color);
+}
+
+/* Toggle arrows */
+.cn-arrow {
+  font-size: 1rem;
+  color: var(--md-default-fg-color--light);
+  transition: transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cn-arrow:hover {
+  color: var(--md-primary-fg-color);
+}
+
+.cn-arrow--sub {
+  font-size: 0.85rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Sub-page lists */
+.cn-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cn-subitem {
+  margin: 0;
+}
+
+/* Rows with children: link + arrow side by side */
+.cn-subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+}
+
+.cn-subheader:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* depth 1 - direct children of section */
+.cn-sublist--depth-1 > .cn-subitem > .cn-sublink,
+.cn-sublist--depth-1 > .cn-subitem > .cn-subheader > .cn-sublink {
+  padding: 0.28rem 0.4rem 0.28rem 1.0rem;
+  font-size: 0.63rem;
+  font-weight: 400;
+}
+
+/* depth 2 */
+.cn-sublist--depth-2 > .cn-subitem > .cn-sublink,
+.cn-sublist--depth-2 > .cn-subitem > .cn-subheader > .cn-sublink {
+  padding: 0.25rem 0.4rem 0.25rem 1.8rem;
+  font-size: 0.61rem;
+  font-weight: 400;
+}
+
+/* depth 3 */
+.cn-sublist--depth-3 > .cn-subitem > .cn-sublink,
+.cn-sublist--depth-3 > .cn-subitem > .cn-subheader > .cn-sublink {
+  padding: 0.22rem 0.4rem 0.22rem 2.6rem;
+  font-size: 0.59rem;
+  font-weight: 400;
+}
+
+/* All sub-links */
+.cn-sublink {
+  display: block;
+  flex-grow: 1;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  border-radius: 0.2rem;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.cn-sublink:not(.cn-sublink--parent):hover {
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+.cn-sublink--active {
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 500;
+}
+
+/* Parent link (has children) */
+.cn-sublink--parent {
+  font-weight: 400;
+  color: var(--md-default-fg-color);
+}
+
+.cn-sublink--parent:hover {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+/* Section headings with subsections */
+.comprehensive-nav .md-nav__item--section > .md-nav__link {
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  pointer-events: auto !important;
+  padding: 0.35rem 0.6rem;
+  margin-bottom: 0.05rem;
+  line-height: 1.5;
+  min-height: auto;
+  height: auto;
+}
+
+.comprehensive-nav .md-nav__item--section > .md-nav__link:hover {
+  background-color: var(--md-default-fg-color--lightest) !important;
+}
+
+/* Section link inside the nav item */
+.comprehensive-nav .md-nav__item--section > .md-nav__link a {
+  color: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.comprehensive-nav .md-nav__item--section > .md-nav__link a:hover {
+  text-decoration: none;
+}
+
+/* Active section link inside toggle sections */
+.comprehensive-nav .md-nav__item--section > .md-nav__link a.md-nav__link--active {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+.comprehensive-nav .md-nav__item--section > .md-nav__link.md-nav__link--active {
+  color: var(--md-primary-fg-color);
+}
+
+/* Simple links without subsections */
+.comprehensive-nav .md-nav__item:not(.md-nav__item--section) > .md-nav__link {
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.6rem;
+  margin-bottom: 0.05rem;
+  line-height: 1.5;
+  height: auto;
+}
+
+.comprehensive-nav .md-nav__item {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.comprehensive-nav .md-nav__link {
+  margin-top: 0;
+  border-radius: 0.2rem;
+  transition: background-color 0.2s;
+  display: block;
+}
+
+.comprehensive-nav .md-nav__link:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Subsection links - smaller and lighter like TOC */
+.comprehensive-nav .md-nav[data-md-level="1"] .md-nav__link {
+  padding: 0.35rem 0.6rem 0.35rem 1.8rem;
+  font-size: 0.64rem;
+  font-weight: 400;
+  margin-bottom: 0.05rem;
+  line-height: 1.5;
+  font-family: inherit;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Subsection container spacing */
+.comprehensive-nav .md-nav[data-md-level="1"] {
+  margin: 0;
+  padding: 0;
+  /* Let JavaScript control visibility */
+  max-height: none;
+  overflow: visible;
+}
+
+/* Ensure subsections are visible when expanded */
+.comprehensive-nav .md-nav__item--section.expanded .md-nav[data-md-level="1"] {
+  display: block !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sections collapsible - handled by JavaScript now */
+.comprehensive-nav .md-nav__toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Active state */
+.comprehensive-nav .md-nav__link--active {
+  color: var(--md-primary-fg-color);
+  font-weight: 500;
+}
