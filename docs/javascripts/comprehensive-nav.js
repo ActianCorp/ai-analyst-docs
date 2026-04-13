@@ -305,13 +305,28 @@
     if (inner) inner.insertBefore(nav, inner.firstChild);
   }
 
+  function fixTabLinks() {
+    // Redirect certain tab hrefs directly to their first page,
+    // bypassing any intermediate redirect index pages.
+    var TAB_OVERRIDES = {
+      'ai-analysts': 'agent/creating-an-agent/index.html'
+    };
+    var base = getSiteRoot();
+    document.querySelectorAll('.md-tabs__link').forEach(function(tab) {
+      var key = (tab.getAttribute('href') || '').replace(/\/+$/, '').split('/').pop();
+      if (TAB_OVERRIDES[key]) {
+        tab.href = base + TAB_OVERRIDES[key];
+      }
+    });
+  }
+
   if (typeof document$ !== 'undefined') {
-    document$.subscribe(function() { setTimeout(buildNav, 100); });
+    document$.subscribe(function() { buildNav(); fixTabLinks(); });
   } else {
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() { setTimeout(buildNav, 100); });
+      document.addEventListener('DOMContentLoaded', function() { buildNav(); fixTabLinks(); });
     } else {
-      setTimeout(buildNav, 100);
+      buildNav(); fixTabLinks();
     }
   }
 })();
