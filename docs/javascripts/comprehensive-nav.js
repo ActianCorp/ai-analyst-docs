@@ -332,29 +332,34 @@
 
   function fixTabLinks() {
     // Redirect certain tab hrefs directly to their first page,
-    // bypassing intermediate redirect index pages.
-    // Uses tab.href (resolved absolute URL) instead of getAttribute so it
-    // works correctly on every page (not just the homepage).
-    var TAB_DIRECT = {
-      'ai-analysts': 'agent/creating-an-agent/index.html',
-      'settings':    'settings/general.html',
-      'governance':  'governance/audit-logs.html'
+    // bypassing any intermediate redirect index pages.
+    var TAB_OVERRIDES = {
+      'ai-analysts': 'agent/creating-an-agent/index.html'
+    };
+    // Tabs that link to standalone HTML pages (not Material layout)
+    // must use full page navigation to bypass instant navigation.
+    var FORCE_NAVIGATE = { 'reference': true };
+    // Rename certain tab labels
+    var TAB_LABELS = {
+      'reference': 'APIs'
     };
     var base = getSiteRoot();
     document.querySelectorAll('.md-tabs__link').forEach(function(tab) {
-      // Extract section name from resolved absolute URL (immune to relative path changes)
-      var absHref = tab.href || '';
-      var section = absHref.replace(base, '').replace(/\/.*$/, '').replace(/\.html$/, '');
-      if (TAB_DIRECT[section]) {
-        var target = base + TAB_DIRECT[section];
-        tab.setAttribute('href', target);
-        // Capture-phase handler runs before Material's event delegation,
-        // forcing a full navigation and bypassing instant-nav redirect issues.
+      var href = tab.getAttribute('href') || '';
+      var key = href.replace(/\/+$/, '').split('/').pop();
+      if (TAB_OVERRIDES[key]) {
+        tab.href = base + TAB_OVERRIDES[key];
+      }
+      if (TAB_LABELS[key]) {
+        tab.textContent = TAB_LABELS[key];
+      }
+      if (FORCE_NAVIGATE[key]) {
+        tab.setAttribute('data-instant-skip', '');
         tab.addEventListener('click', function(e) {
+          e.stopPropagation();
           e.preventDefault();
-          e.stopImmediatePropagation();
-          window.location.href = target;
-        }, true);
+          window.location.href = tab.href;
+        });
       }
     });
   }

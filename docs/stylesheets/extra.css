@@ -31,7 +31,6 @@
   --md-typeset-a-color:         var(--color-accent);
   --md-code-bg-color:           var(--color-code-bg);
   --md-code-fg-color:           var(--color-code-text);
-}
 
 /* ═══════════════════════════════════════════════
    DARK MODE tokens
@@ -99,11 +98,12 @@ body,
   filter: brightness(0) invert(1) !important;
 }
 
+/* Bolder site title heading */
 .md-header__title,
 .md-header__topic {
   color: var(--color-accent) !important;
   font-family: var(--md-text-font);
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .md-header__button {
@@ -153,6 +153,9 @@ body,
 
 /* ═══════════════════════════════════════════════
    NAVIGATION TABS
+   All 11 tabs must fit without overflow (overflow: auto + scrollbar-width: none
+   means hidden overflow = unreachable tabs on desktop).
+   0.6rem font + tight padding keeps total tab width ~800px, fits any ≥960px screen.
    ═══════════════════════════════════════════════ */
 .md-tabs {
   background-color: var(--color-bg) !important;
@@ -162,26 +165,73 @@ body,
   padding-top: 0 !important;
 }
 
-/* Light mode tabs: #1f2937 */
-[data-md-color-scheme="default"] .md-tabs__link {
-  color: #1f2937 !important;
-  font-family: var(--md-text-font);
-  font-size: 14px;
-  font-weight: 500;
+/* Reduce font size so all 11 tabs fit without overflow */
+/* Slightly bolder header tabs */
+/* Very slightly less bold header tabs */
+/* Slightly less bold header tabs */
+/* Slightly bolder and larger header tabs */
+/* Slightly less bold and smaller header tabs */
+/* Very slightly bolder header tabs */
+/* Slightly less bold and smaller header tabs */
+/* Slightly bolder and larger header tabs */
+/* Very slightly less bold header tabs */
+/* Very slightly bolder header tabs */
+.md-tabs__link {
+  font-family: var(--md-text-font) !important;
+  font-size: 0.59rem !important;
+  font-weight: 600 !important;
   opacity: 1 !important;
 }
 
-/* Dark mode tabs: match heading color */
+/* Reduce horizontal padding on each tab item to save space */
+/* Slightly increased spacing between header tabs */
+/* Reduced spacing between header tabs */
+/* Slightly reduced spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+/* Very slightly reduced spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+/* Very slightly reduced spacing between header tabs */
+/* Very slightly reduced spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+/* Very slightly decreased spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+/* Very slightly decreased spacing between header tabs */
+/* Very slightly increased spacing between header tabs */
+.md-tabs__item {
+  padding-left: 0.28rem !important;
+  padding-right: 0.28rem !important;
+}
+
+/* Align first tab with the logo: inherit left padding from grid centering */
+/* Tabs start at far left, before logo */
+/* Tabs start before the logo by shifting left with negative margin */
+/* Tabs start just before the logo, slightly shifted right */
+/* Tabs start further left by increasing negative margin */
+/* Tabs start slightly more to the right by reducing negative margin */
+/* Tabs start even more to the right by reducing negative margin */
+/* Tabs start slightly more to the left by increasing negative margin */
+/* Tabs start slightly more to the left by increasing negative margin */
+/* Tabs start slightly more to the left by increasing negative margin */
+.md-tabs__list {
+  padding-left: 0 !important;
+  margin-left: -2.1rem !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--color-border) transparent !important;
+}
+
+/* Light mode tab color */
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: #1f2937 !important;
+}
+
+/* Dark mode tab color */
 [data-md-color-scheme="slate"] .md-tabs {
   background-color: var(--color-bg) !important;
 }
 
 [data-md-color-scheme="slate"] .md-tabs__link {
   color: var(--color-text) !important;
-  font-family: var(--md-text-font);
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 1 !important;
 }
 
 .md-tabs__link--active,
@@ -641,10 +691,11 @@ pre code {
 }
 
 /* ═══════════════════════════════════════════════
-   CENTERED LAYOUT — like squidfunk.github.io/mkdocs-material
-   Overrides style.css which sets .md-grid to max-width: 100%
-   causing content to stretch full-width on wide screens.
-   61rem = Material's exact default grid max-width
+   CENTERED LAYOUT — same 61rem grid for BOTH header and tabs
+   This keeps them visually aligned: logo lines up with first tab,
+   last tab ends near the palette/search area above it.
+   11 tabs at 0.6rem font ≈ 751px, which fits within 61rem (976px) without overflow.
+   No overflow = Material's scrollTabIntoView() has no effect = all tabs always visible.
    ═══════════════════════════════════════════════ */
 .md-grid {
   max-width: 61rem !important;
@@ -652,33 +703,40 @@ pre code {
   margin-right: auto !important;
 }
 
-/* Match Material's default sidebar width exactly */
+/* Sidebar: exact same width as Material docs (12.1rem) */
+/* Move sidebar slightly to the left */
+/* Move sidebar further to the left */
+/* Move sidebar even further to the left */
+/* Move sidebar even further to the left */
+/* Move sidebar slightly to the right for mobile compatibility */
+/* Move sidebar slightly more to the right for mobile compatibility */
+/* Move sidebar very slightly to the left for mobile compatibility */
+/* Move sidebar very slightly to the left for mobile compatibility */
+/* Move sidebar further to the left for mobile compatibility */
 .md-sidebar {
   width: 12.1rem !important;
+  margin-left: -2.2rem !important;
 }
 
-/* Match Material's default main inner top margin */
-.md-main__inner {
-  margin-top: 1.5rem !important;
-}
-
-/* Content inner: match Material's exact default (padding-top 0.6rem, not 1.2rem) */
-.md-content__inner {
-  padding: 0.6rem 1.2rem 1.2rem !important;
-}
-
-/* Content padding overrides the 2rem from style.css */
+/* Content inner margins matching Material defaults */
 .md-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* Remove grey background and extra top padding on sidebar scrollwrap from style.css */
-.md-sidebar__scrollwrap {
-  background-color: var(--color-bg) !important;
-  padding-top: 0 !important;
-  margin: 0 !important;
+.md-content__inner {
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem !important;
 }
-[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
-  background-color: var(--color-bg) !important;
+
+/* Push search to the right: tab bar flex-grows, search aligns right */
+.md-header__title {
+  flex: 1 1 auto !important;
+}
+
+/* Move search even further right */
+.md-header__option {
+  margin-left: auto !important;
+  margin-right: 1.5rem !important;
+}
 }
