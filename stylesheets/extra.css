@@ -644,22 +644,41 @@ pre code {
    CENTERED LAYOUT — like squidfunk.github.io/mkdocs-material
    Overrides style.css which sets .md-grid to max-width: 100%
    causing content to stretch full-width on wide screens.
-   76.25rem = 1220px (Material's default grid max-width)
+   61rem = Material's exact default grid max-width
    ═══════════════════════════════════════════════ */
 .md-grid {
-  max-width: 76.25rem !important;
+  max-width: 61rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-/* Content inner: comfortable reading width between sidebars */
-.md-content__inner {
-  padding-left: 1.6rem !important;
-  padding-right: 1.6rem !important;
+/* Match Material's default sidebar width exactly */
+.md-sidebar {
+  width: 12.1rem !important;
 }
 
-/* Content padding overrides the 2rem from style.css for better proportions */
+/* Match Material's default main inner top margin */
+.md-main__inner {
+  margin-top: 1.5rem !important;
+}
+
+/* Content inner: match Material's exact default (padding-top 0.6rem, not 1.2rem) */
+.md-content__inner {
+  padding: 0.6rem 1.2rem 1.2rem !important;
+}
+
+/* Content padding overrides the 2rem from style.css */
 .md-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+/* Remove grey background and extra top padding on sidebar scrollwrap from style.css */
+.md-sidebar__scrollwrap {
+  background-color: var(--color-bg) !important;
+  padding-top: 0 !important;
+  margin: 0 !important;
+}
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+  background-color: var(--color-bg) !important;
 }

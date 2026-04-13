@@ -332,15 +332,29 @@
 
   function fixTabLinks() {
     // Redirect certain tab hrefs directly to their first page,
-    // bypassing any intermediate redirect index pages.
-    var TAB_OVERRIDES = {
-      'ai-analysts': 'agent/creating-an-agent/index.html'
+    // bypassing intermediate redirect index pages.
+    // Uses tab.href (resolved absolute URL) instead of getAttribute so it
+    // works correctly on every page (not just the homepage).
+    var TAB_DIRECT = {
+      'ai-analysts': 'agent/creating-an-agent/index.html',
+      'settings':    'settings/general.html',
+      'governance':  'governance/audit-logs.html'
     };
     var base = getSiteRoot();
     document.querySelectorAll('.md-tabs__link').forEach(function(tab) {
-      var key = (tab.getAttribute('href') || '').replace(/\/+$/, '').split('/').pop();
-      if (TAB_OVERRIDES[key]) {
-        tab.href = base + TAB_OVERRIDES[key];
+      // Extract section name from resolved absolute URL (immune to relative path changes)
+      var absHref = tab.href || '';
+      var section = absHref.replace(base, '').replace(/\/.*$/, '').replace(/\.html$/, '');
+      if (TAB_DIRECT[section]) {
+        var target = base + TAB_DIRECT[section];
+        tab.setAttribute('href', target);
+        // Capture-phase handler runs before Material's event delegation,
+        // forcing a full navigation and bypassing instant-nav redirect issues.
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          window.location.href = target;
+        }, true);
       }
     });
   }
