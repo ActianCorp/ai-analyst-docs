@@ -112,7 +112,7 @@ nav:
       - governance/import-semantic-layer-and-agents/README.md
       - Import OSI Format: governance/import-semantic-layer-and-agents/import-osi-format.md
       - Import Actian AI Analyst Format (YAML / JSON): governance/import-semantic-layer-and-agents/import-wobby-format-yaml-json.md
-    - How Actian AI Analyst handles your data: governance/how-ai-analyst-handles-your-data.md
+    - How AI Analyst handles your data: governance/how-ai-analyst-handles-your-data.md
     - How Actian AI Analyst protects your data: governance/how-wobby-protects-your-data.md
   - APIs:
     - API Reference: public-api/reference/index.md
