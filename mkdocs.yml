@@ -1,6 +1,6 @@
 #Project Information
 site_name: Actian AI Analyst
-site_url: https://docs.actian.com/ai-analyst/
+site_url: https://docs.wobby.ai/
 site_description: >-
   Documentation for Actian AI Analyst — ask questions about your data in plain language and get instant, accurate answers.
 use_directory_urls: false
@@ -114,7 +114,7 @@ nav:
       - Import Actian AI Analyst Format (YAML / JSON): governance/import-semantic-layer-and-agents/import-wobby-format-yaml-json.md
     - How AI Analyst handles your data: governance/how-ai-analyst-handles-your-data.md
     - How Actian AI Analyst protects your data: governance/how-wobby-protects-your-data.md
-  - APIs:
+  - API Reference:
     - API Reference: public-api/reference/index.md
 
 # Theme Configuration
@@ -198,6 +198,8 @@ copyright: >-
 extra:
   generator: false
   homepage: https://docs.actian.com/
+  version:
+    provider: mike
   analytics: 
     provider: custom
     property: G-NHC5CN295F
