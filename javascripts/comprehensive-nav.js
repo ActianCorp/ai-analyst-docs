@@ -336,30 +336,11 @@
     var TAB_OVERRIDES = {
       'ai-analysts': 'agent/creating-an-agent/index.html'
     };
-    // Tabs that link to standalone HTML pages (not Material layout)
-    // must use full page navigation to bypass instant navigation.
-    var FORCE_NAVIGATE = { 'reference': true };
-    // Rename certain tab labels
-    var TAB_LABELS = {
-      'reference': 'APIs'
-    };
     var base = getSiteRoot();
     document.querySelectorAll('.md-tabs__link').forEach(function(tab) {
-      var href = tab.getAttribute('href') || '';
-      var key = href.replace(/\/+$/, '').split('/').pop();
+      var key = (tab.getAttribute('href') || '').replace(/\/+$/, '').split('/').pop();
       if (TAB_OVERRIDES[key]) {
         tab.href = base + TAB_OVERRIDES[key];
-      }
-      if (TAB_LABELS[key]) {
-        tab.textContent = TAB_LABELS[key];
-      }
-      if (FORCE_NAVIGATE[key]) {
-        tab.setAttribute('data-instant-skip', '');
-        tab.addEventListener('click', function(e) {
-          e.stopPropagation();
-          e.preventDefault();
-          window.location.href = tab.href;
-        });
       }
     });
   }
