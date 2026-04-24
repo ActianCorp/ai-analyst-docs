@@ -1,0 +1,362 @@
+/* =============================================================
+   gitbook-code.css — Pixel-perfect GitBook match
+   Covers: YAML, SQL, Python, Bash, JSON, diff + inline pills
+   
+   YAML / JSON keys  = #c96a1e  orange-brown
+   SQL keywords      = #d73a49  red
+   All strings       = #22863a  green
+   Comments          = #999999  grey (no italic)
+   Plain text        = #24292e  near-black
+   Inline pill       = grey bg + dark text (NO pink)
+
+   Add LAST in mkdocs.yml extra_css to win the cascade.
+   ============================================================= */
+
+/* ══════════════════════════════════════════════════════════════
+   DESIGN TOKENS
+   ══════════════════════════════════════════════════════════════ */
+:root {
+  /* Block chrome */
+  --gc-bg:              #ffffff;
+  --gc-border:          #e1e4e8;
+  --gc-radius:          6px;
+  --gc-text:            #24292e;   /* near-black — plain identifiers       */
+
+  /* Token colors */
+  --gc-keyword-sql:     #d73a49;   /* red    — SQL keywords (SELECT, FROM) */
+  --gc-keyword-lang:    #d73a49;   /* red    — Python/JS keywords          */
+  --gc-key-yaml:        #c96a1e;   /* orange — YAML/JSON keys              */
+  --gc-string:          #22863a;   /* green  — ALL quoted strings          */
+  --gc-comment:         #999999;   /* grey   — comments, no italic         */
+  --gc-number:          #22863a;   /* green  — numbers (matches GitBook)   */
+
+  /* Line numbers */
+  --gc-line-num:        #babbbd;
+  --gc-line-num-bg:     #f6f8fa;
+
+  /* Highlighted line */
+  --gc-hll:             #fffbdd;
+  --gc-hll-border:      #e6c000;
+
+  /* Inline code — dark text, grey pill, NO pink/red */
+  --gc-inline-bg:       #f3f4f6;
+  --gc-inline-text:     #24292e;
+  --gc-inline-border:   #c9cdd2;
+}
+
+/* ── Dark mode ──────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --gc-bg:              #1c2128;
+  --gc-border:          #30363d;
+  --gc-text:            #cdd9e5;
+  --gc-keyword-sql:     #f97583;
+  --gc-keyword-lang:    #f97583;
+  --gc-key-yaml:        #e3986a;
+  --gc-string:          #8ddb8c;
+  --gc-comment:         #768390;
+  --gc-number:          #8ddb8c;
+  --gc-line-num:        #545d68;
+  --gc-line-num-bg:     #161b22;
+  --gc-hll:             #2d2a0f;
+  --gc-hll-border:      #d4a72c;
+  --gc-inline-bg:       #22272e;
+  --gc-inline-text:     #cdd9e5;
+  --gc-inline-border:   #444c56;
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   BLOCK WRAPPER
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight,
+.md-typeset .highlighttable {
+  background:    var(--gc-bg)               !important;
+  border:        1px solid var(--gc-border) !important;
+  border-radius: var(--gc-radius)           !important;
+  overflow:      hidden                     !important;
+  margin:        1em 0                      !important;
+  box-shadow:    none                       !important;
+  position:      relative                   !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   <pre>
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight pre,
+.md-typeset pre {
+  background:          var(--gc-bg) !important;
+  border:              none         !important;
+  border-radius:       0            !important;
+  box-shadow:          none         !important;
+  margin:              0            !important;
+  padding:             1em 1.25em   !important;
+  overflow-x:          auto         !important;
+  overscroll-behavior: contain      !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   <code> inside <pre>
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight pre code,
+.md-typeset pre code {
+  font-family: "SFMono-Regular", "Fira Code", ui-monospace,
+               Menlo, Consolas, monospace !important;
+  font-size:   0.85em                    !important;
+  line-height: 1.7                       !important;
+  color:       var(--gc-text)            !important;
+  background:  transparent               !important;
+  border:      none                      !important;
+  padding:     0                         !important;
+  white-space: pre                       !important;
+  -webkit-font-smoothing: antialiased    !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INLINE CODE — grey pill, dark text, NO pink (GitBook style)
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset code:not(pre code) {
+  font-family:            "SFMono-Regular", "Fira Code", ui-monospace,
+                          Menlo, Consolas, monospace             !important;
+  font-size:              0.8em                                   !important;
+  background:             var(--gc-inline-bg)                     !important;
+  color:                  var(--gc-inline-text)                   !important;
+  border:                 1px solid var(--gc-inline-border)       !important;
+  border-radius:          4px                                     !important;
+  padding:                0.1em 0.4em                             !important;
+  font-variant-ligatures: none                                    !important;
+  box-shadow:             none                                    !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   COPY BUTTON
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight .md-clipboard {
+  top:           0.5em                      !important;
+  right:         0.6em                      !important;
+  color:         var(--gc-line-num)         !important;
+  background:    var(--gc-bg)              !important;
+  border:        1px solid var(--gc-border) !important;
+  border-radius: 4px                        !important;
+  padding:       0.15em 0.55em             !important;
+  font-size:     0.72em                     !important;
+  transition:    color 0.15s, border-color 0.15s !important;
+}
+.md-typeset .highlight .md-clipboard:hover {
+  color:        var(--gc-text)  !important;
+  border-color: var(--gc-text)  !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LINE NUMBERS
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlighttable {
+  border-spacing: 0    !important;
+  width:          100% !important;
+}
+.md-typeset .highlighttable td { padding: 0 !important; }
+
+.md-typeset .highlighttable .linenodiv pre {
+  background:    var(--gc-line-num-bg)         !important;
+  border-right:  1px solid var(--gc-border)    !important;
+  color:         var(--gc-line-num)            !important;
+  padding:       1em 0.8em                     !important;
+  margin:        0                             !important;
+  border-radius: 0                             !important;
+  user-select:   none                          !important;
+  font-size:     0.82em                        !important;
+  line-height:   1.7                           !important;
+  text-align:    right                         !important;
+}
+.md-typeset .highlighttable .code pre {
+  border-left: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   HIGHLIGHTED LINES
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight .hll {
+  background:  var(--gc-hll)                   !important;
+  display:     block                           !important;
+  margin:      0 -1.25em                       !important;
+  padding:     0 1.25em                        !important;
+  border-left: 3px solid var(--gc-hll-border)  !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LANGUAGE LABEL (title= on fenced blocks)
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .highlight .filename {
+  display:        flex                          !important;
+  align-items:    center                        !important;
+  background:     var(--gc-line-num-bg)         !important;
+  border-bottom:  1px solid var(--gc-border)    !important;
+  padding:        0.4em 1em                     !important;
+  font-family:    "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace !important;
+  font-size:      0.75em                        !important;
+  font-weight:    600                           !important;
+  letter-spacing: 0.04em                        !important;
+  text-transform: uppercase                     !important;
+  color:          var(--gc-line-num)            !important;
+  border-radius:  0                             !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   TOKEN COLORS
+   ══════════════════════════════════════════════════════════════ */
+
+/* ──────────────────────────────────────────────────────────────
+   KEYWORDS — RED
+   Covers SQL (SELECT, FROM, WHERE, CREATE, GRANT, INSERT…)
+   AND Python/JS/Bash keywords (def, class, import, return…)
+   Pygments emits ALL of these as .k / .kn / .kd / .kr / .kc
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .k,
+.md-typeset .highlight .kn,
+.md-typeset .highlight .kd,
+.md-typeset .highlight .kr  {
+  color:       var(--gc-keyword-sql) !important;
+  font-weight: normal                !important;
+}
+
+/* Boolean / null — keep as plain text (GitBook: no special color) */
+.md-typeset .highlight .kc  { color: var(--gc-text) !important; font-weight: normal !important; }
+
+/* Type keywords */
+.md-typeset .highlight .kt  { color: var(--gc-keyword-lang) !important; }
+
+/* ──────────────────────────────────────────────────────────────
+   YAML / JSON KEYS — ORANGE-BROWN
+   Pygments emits YAML keys as .nl (named labels) or .l (literals)
+   JSON keys as .nt or .py
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .nl,
+.md-typeset .highlight .py  { color: var(--gc-key-yaml) !important; }
+
+/* HTML/XML/YAML tag names */
+.md-typeset .highlight .nt  { color: var(--gc-key-yaml) !important; }
+
+/* HTML/XML attributes → orange-brown */
+.md-typeset .highlight .na  { color: var(--gc-key-yaml) !important; }
+
+/* ──────────────────────────────────────────────────────────────
+   STRINGS — GREEN
+   All quoted string values across all languages
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .s,
+.md-typeset .highlight .s1,
+.md-typeset .highlight .s2,
+.md-typeset .highlight .sb,
+.md-typeset .highlight .sc,
+.md-typeset .highlight .sd,
+.md-typeset .highlight .sh,
+.md-typeset .highlight .si,
+.md-typeset .highlight .sx,
+.md-typeset .highlight .sr,
+.md-typeset .highlight .ss  { color: var(--gc-string) !important; }
+
+/* Escape sequences inside strings */
+.md-typeset .highlight .se  { color: var(--gc-string) !important; }
+
+/* ──────────────────────────────────────────────────────────────
+   COMMENTS — GREY, no italic
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .c,
+.md-typeset .highlight .c1,
+.md-typeset .highlight .cm,
+.md-typeset .highlight .cs,
+.md-typeset .highlight .cp  {
+  color:      var(--gc-comment) !important;
+  font-style: normal            !important;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   NUMBERS — green (matches GitBook)
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .m,
+.md-typeset .highlight .mi,
+.md-typeset .highlight .mf,
+.md-typeset .highlight .mh,
+.md-typeset .highlight .mo  { color: var(--gc-number) !important; }
+
+/* ──────────────────────────────────────────────────────────────
+   PLAIN IDENTIFIERS, OPERATORS, PUNCTUATION — near-black
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .n,
+.md-typeset .highlight .nn,
+.md-typeset .highlight .ni,
+.md-typeset .highlight .no  { color: var(--gc-text) !important; }
+
+.md-typeset .highlight .o,
+.md-typeset .highlight .ow  { color: var(--gc-text) !important; }
+
+.md-typeset .highlight .p   { color: var(--gc-text) !important; }
+
+/* Built-in functions */
+.md-typeset .highlight .nb,
+.md-typeset .highlight .bp  { color: var(--gc-text) !important; }
+
+/* Function / class names */
+.md-typeset .highlight .nf,
+.md-typeset .highlight .nc  { color: var(--gc-text) !important; }
+
+/* Variables */
+.md-typeset .highlight .nv,
+.md-typeset .highlight .vc,
+.md-typeset .highlight .vg,
+.md-typeset .highlight .vi  { color: var(--gc-key-yaml) !important; }
+
+/* Decorators */
+.md-typeset .highlight .nd  { color: var(--gc-text) !important; }
+
+/* Literal values (unquoted YAML scalars like null, true) */
+.md-typeset .highlight .l   { color: var(--gc-text) !important; }
+
+/* ──────────────────────────────────────────────────────────────
+   SHELL PROMPT — muted, non-selectable
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .gp  {
+  color:       var(--gc-line-num) !important;
+  user-select: none               !important;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   DIFF
+   ────────────────────────────────────────────────────────────── */
+.md-typeset .highlight .gi  {
+  color:      var(--gc-string)           !important;
+  background: rgba(34, 134, 58, 0.08)   !important;
+  display:    block                      !important;
+}
+.md-typeset .highlight .gd  {
+  color:      var(--gc-keyword-sql)      !important;
+  background: rgba(215, 58, 73, 0.08)   !important;
+  display:    block                      !important;
+}
+
+/* Generic output */
+.md-typeset .highlight .go  { color: var(--gc-line-num) !important; }
+
+/* Errors */
+.md-typeset .highlight .err {
+  color:      var(--gc-text) !important;
+  background: transparent    !important;
+  border:     none           !important;
+}
+
+/* Invisible whitespace */
+.md-typeset .highlight .w   { color: transparent !important; }
+
+
+/* ══════════════════════════════════════════════════════════════
+   ADMONITIONS + TABBED BLOCKS
+   ══════════════════════════════════════════════════════════════ */
+.md-typeset .admonition .highlight,
+.md-typeset details .highlight {
+  border-color: var(--gc-border) !important;
+}
+.md-typeset .tabbed-content .highlight {
+  border-top-left-radius:  0 !important;
+  border-top-right-radius: 0 !important;
+  margin-top:              0 !important;
+}

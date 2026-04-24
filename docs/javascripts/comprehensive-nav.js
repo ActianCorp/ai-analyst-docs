@@ -172,7 +172,6 @@
   ];
 
   // Detect site root from first tab's resolved absolute URL.
-  // Works correctly with mkdocs serve, VS Code Live Server, any host path.
   function getSiteRoot() {
     var tab = document.querySelector('.md-tabs__link');
     if (tab && tab.href) {
@@ -193,7 +192,6 @@
       var hasChildren = page.pages && page.pages.length > 0;
 
       if (hasChildren) {
-        // Row with link + toggle arrow
         var row = document.createElement('div');
         row.className = 'cn-subheader';
 
@@ -215,16 +213,14 @@
         var arrow = document.createElement('span');
         arrow.className = 'cn-arrow cn-arrow--sub';
         arrow.innerHTML = '&#8250;';
-        arrow.style.transform = 'rotate(90deg)'; // starts expanded
+        arrow.style.transform = 'rotate(90deg)';
         row.appendChild(arrow);
 
         li.appendChild(row);
 
-        // Recursively build children
         var childList = buildPageList(page.pages, base, currentPath, depth + 1);
         li.appendChild(childList);
 
-        // Toggle on arrow click
         var collapsed = false;
         arrow.addEventListener('click', function(e) {
           e.preventDefault();
@@ -235,7 +231,6 @@
         });
 
       } else {
-        // Plain link
         var a = document.createElement('a');
         a.href = base + page.href;
         var isActive = currentPath.indexOf(page.href.replace(/\/index\.html$/, '').replace(/\.html$/, '')) !== -1
@@ -259,6 +254,28 @@
     return ul;
   }
 
+  // ─── NEW: scroll the sidebar so the active link is visible ───────────────
+  function scrollToActive(sidebar) {
+    // Give the browser one frame to finish layout before measuring
+    requestAnimationFrame(function() {
+      var activeLink = sidebar.querySelector('.cn-sublink--active, .cn-label--active');
+      if (!activeLink) return;
+
+      var scrollWrap = sidebar.closest('.md-sidebar__scrollwrap') || sidebar;
+      var linkTop    = activeLink.getBoundingClientRect().top;
+      var wrapTop    = scrollWrap.getBoundingClientRect().top;
+      var wrapHeight = scrollWrap.clientHeight;
+      var offset     = linkTop - wrapTop;
+
+      // Only scroll if the active item isn't already fully visible
+      if (offset < 0 || offset > wrapHeight - activeLink.offsetHeight) {
+        // Centre it in the scroll container
+        scrollWrap.scrollTop += offset - wrapHeight / 2 + activeLink.offsetHeight / 2;
+      }
+    });
+  }
+  // ─────────────────────────────────────────────────────────────────────────
+
   function buildNav() {
     var sidebar = document.querySelector('.md-sidebar--primary .md-sidebar__scrollwrap');
     if (!sidebar) return;
@@ -278,7 +295,6 @@
       var item = document.createElement('div');
       item.className = 'cn-item' + (isCurrentSection ? ' cn-item--active' : '');
 
-      // Section header
       var header = document.createElement('div');
       header.className = 'cn-header';
 
@@ -286,7 +302,6 @@
       link.href = base + section.href;
       link.className = 'cn-label' + (isCurrentSection ? ' cn-label--active' : '');
       link.textContent = section.label;
-      // Standalone pages (not Material layout) must use full page navigation
       if (section.key === 'public-api/reference') {
         link.setAttribute('data-instant-skip', '');
         link.addEventListener('click', function(e) {
@@ -300,16 +315,14 @@
       var arrow = document.createElement('span');
       arrow.className = 'cn-arrow';
       arrow.innerHTML = '&#8250;';
-      arrow.style.transform = 'rotate(90deg)'; // starts expanded
+      arrow.style.transform = 'rotate(90deg)';
       header.appendChild(arrow);
 
       item.appendChild(header);
 
-      // Pages list (recursive)
       var subList = buildPageList(section.pages, base, currentPath, 1);
       item.appendChild(subList);
 
-      // Toggle section on arrow click
       var isCollapsed = false;
       arrow.addEventListener('click', function(e) {
         e.preventDefault();
@@ -322,17 +335,18 @@
       nav.appendChild(item);
     });
 
-    // Hide native nav, insert ours
     var nativeNav = sidebar.querySelector('.md-nav--primary');
     if (nativeNav) nativeNav.style.display = 'none';
 
     var inner = sidebar.querySelector('.md-sidebar__inner');
     if (inner) inner.insertBefore(nav, inner.firstChild);
+
+    // ── Scroll active link into view after nav is inserted ──────────────────
+    scrollToActive(sidebar);
+    // ────────────────────────────────────────────────────────────────────────
   }
 
   function fixTabLinks() {
-    // Redirect certain tab hrefs directly to their first page,
-    // bypassing any intermediate redirect index pages.
     var TAB_OVERRIDES = {
       'ai-analysts': 'agent/creating-an-agent/index.html'
     };
