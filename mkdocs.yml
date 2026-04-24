@@ -231,7 +231,7 @@ extra_css:
   - assets/stylesheets/actian-landing.css?v=4
   - stylesheets/extra.css
   - stylesheets/comprehensive-nav.css
-  - stylesheets/stripe-code.css
+  # - stylesheets/stripe-code.css
 
 
 extra_javascript:
