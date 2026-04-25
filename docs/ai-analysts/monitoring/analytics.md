@@ -25,11 +25,14 @@ Shows the total number of analyst sessions in the selected time period, with a t
 
 The chart below the number shows daily session volume broken down by channel (Web, Slack, Teams), so you can see which surfaces are driving usage.
 
-### Deep Analysis %
+### Deep Analysis % _(historical)_
 
-Shows the percentage of sessions that used Deep Analysis mode. A higher percentage typically means users are asking more complex, multi-step questions.
+!!! info
 
-The chart shows the split between Deep and Quick Analysis sessions over time.
+    Quick Analysis and Deep Analysis modes have been retired. This metric reflects historical sessions only — new sessions no longer have a mode assigned.
+
+
+Shows the percentage of historical sessions that used Deep Analysis mode.
 
 ### Follow-up %
 

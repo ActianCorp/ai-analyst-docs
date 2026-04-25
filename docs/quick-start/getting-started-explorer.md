@@ -29,7 +29,7 @@ Good questions are specific:
 * "Show me the top 10 customers by order value this quarter"
 * "How many new users signed up last week compared to the week before?"
 
-See [Tips for Quick Analysis](../agent/working-with-agents/tips-for-quick-analysis.md) for more examples.
+See [Tips for Asking Questions](../agent/working-with-agents/tips-for-quick-analysis.md) for more examples.
 
 ## Step 4: Explore and follow up
 
@@ -37,7 +37,7 @@ Explorer maintains context throughout your session. After getting an answer:
 
 * Highlight any text in the response to ask a follow-up about that specific part
 * Ask a follow-up question in the chat to drill deeper
-* Use **Deep Analysis** mode for complex, multi-step questions — the AI Analyst will build a research plan and produce a full report
+* Ask the AI Analyst to build a report when you've gathered enough analysis — _"Can you put this together into a report?"_
 
 ## Step 5: Use Saved Prompts
 
@@ -45,6 +45,12 @@ If your team has saved common queries, you'll find them on the **Saved prompts**
 
 See [Saved Prompts](../agent/working-with-agents/saved-prompts.md) to learn more.
 
-## Step 6: Share results
+## Step 6: Save results
+
+Charts, tables, and reports can be saved as **Artifacts** — named outputs that stay in your Explorer library and re-run their queries each time you open them. Click **\[Save]** on any chart or table card, or **\[Save artifact]** in the report panel footer.
+
+See [Artifacts](../agent/working-with-agents/artifacts.md) to learn more.
+
+## Step 7: Share results
 
 Every conversation has a unique URL — copy it from your browser to share a result with a teammate.

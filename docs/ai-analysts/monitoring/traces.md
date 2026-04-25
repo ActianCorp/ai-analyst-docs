@@ -17,7 +17,6 @@ In Studio, the *Traces* tab gives [Admins](../../settings/members.md) a full log
 2. Click the *Monitoring* button in the top action bar and select *Traces*.
 
 The page has a two-panel layout:
-
 - *Left panel* — a scrollable list of all traces for this AI Analyst, grouped by date.
 - *Right panel* — the full conversation detail for whichever trace you have selected.
 
@@ -32,7 +31,6 @@ Each trace in the list displays:
 | User | The name and avatar of the user who ran the session |
 | Time | When the session took place (relative, e.g. "2 hours ago") |
 | Question | The user's original question or prompt |
-| Analysis mode | *Deep Analysis* or *Quick Analysis* badge |
 | Channel | Where the question was asked — Web, Slack, or Teams |
 | Feedback | Whether the user rated the answer thumbs up or thumbs down |
 | Comments | Number of comments or annotations on the trace |
@@ -41,7 +39,6 @@ Each trace in the list displays:
 
 Use the filter bar at the top of the left panel to narrow down the list. Available filters:
 
-- *Mode* — show only Deep Analysis or Quick Analysis sessions
 - *Feedback* — filter by positive, negative, or no feedback
 - *Follow-ups* — show only sessions that included follow-up questions
 - *Assumptions* — show only sessions where the analyst made assumptions
@@ -56,7 +53,6 @@ Click any trace in the left panel to open the full conversation in the right pan
 
 - The user's original question and all follow-up messages
 - Every response from the AI Analyst, including reasoning steps, charts, and tables
-- The analysis mode used for each response
 
 This is useful for understanding how the analyst reasoned through a question, identifying where it may have gone wrong, and reviewing the quality of answers before acting on any feedback.
 
@@ -66,7 +62,7 @@ Click the star icon on a trace to mark it for easy reference later. You can then
 
 ## Exporting Traces
 
-Click *Export CSV* to download the current filtered list of traces as a spreadsheet. The export includes the question, user, timestamp, mode, channel, duration, and feedback for each trace.
+Click *Export CSV* to download the current filtered list of traces as a spreadsheet. The export includes the question, user, timestamp, channel, duration, and feedback for each trace.
 
 !!! info
 

@@ -21,8 +21,14 @@ nav:
     - Overview: agent/working-with-agents/wobby-explorer.md
     - Asking Questions: agent/working-with-agents/asking-questions.md
     - Saved Prompts: agent/working-with-agents/saved-prompts.md
+    - Plan Mode: agent/working-with-agents/plan-mode.md
+    - Reports: agent/working-with-agents/reports.md
+    - Artifacts: agent/working-with-agents/artifacts.md
+    - Scheduled Insights: agent/working-with-agents/scheduled-insights.md
+    - Inbox: agent/working-with-agents/inbox.md
+    - Sharing: agent/working-with-agents/sharing.md
+    - Tips for Asking Questions: agent/working-with-agents/tips-for-quick-analysis.md
     - Deep Analysis vs Quick Analysis: agent/working-with-agents/deep-analysis-vs-quick-analysis.md
-    - Tips for Quick Analysis: agent/working-with-agents/tips-for-quick-analysis.md
   - AI Analysts:
     - Creating an AI Analyst:
       - agent/creating-an-agent/README.md

@@ -12,8 +12,8 @@ Explorer is the counterpart to Studio: Studio is where data teams build and conf
 
 Actian AI Analyst uses two roles to separate configuration from daily use:
 
-* [**Admin**](../../settings/members.md) — full access to both Studio and Explorer. For data teams who build and test agents.
-* [**User**](../../settings/members.md) — access to Explorer only. For business users who interact with configured agents.
+* [**Admin**](../../settings/members.md) — full access to both Studio and Explorer. For data teams who build and test AI Analysts.
+* [**User**](../../settings/members.md) — access to Explorer only. For business users who interact with configured AI Analysts.
 
 ## Mobile
 
@@ -22,7 +22,10 @@ Explorer is fully supported on mobile devices — query your data and view resul
 ## In this section
 
 * [Actian AI Analyst Explorer](wobby-explorer.md) — Overview of the Explorer interface
-* [Asking Questions](asking-questions.md) — Conversations, follow-ups, analysis modes, and sharing
+* [Asking Questions](asking-questions.md) — Conversations, follow-ups, Plan Mode, and sharing
 * [Saved Prompts](saved-prompts.md) — Reuse your team's proven queries
-* [Deep Analysis vs Quick Analysis](deep-analysis-vs-quick-analysis.md) — When to use each mode
-* [Tips for Quick Analysis](tips-for-quick-analysis.md) — How to write effective questions
+* [Plan Mode](plan-mode.md) — Let the AI Analyst outline its approach before starting
+* [Reports](reports.md) — Build structured reports from your analysis
+* [Artifacts](artifacts.md) — Save and revisit charts, tables, and reports
+* [Tips for Asking Questions](tips-for-quick-analysis.md) — How to write effective questions
+* [Deep Analysis vs Quick Analysis](deep-analysis-vs-quick-analysis.md) — _(Retired — kept for reference)_

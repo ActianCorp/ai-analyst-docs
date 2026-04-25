@@ -29,8 +29,7 @@ The following usage statistics are displayed as cards:
 | Metric | Description |
 |--------|-------------|
 | **Active AI Analysts** | The number of AI Analysts currently active in your organization, out of the total allowed by your plan. |
-| **Basic Analysis Messages** | The number of Quick Analyst messages used this month, out of your monthly allocation. |
-| **Deep Analysis Messages** | The number of Deep Analyst messages used this month, out of your monthly allocation. |
+| **AI Analyst Messages** | The number of AI Analyst messages used this month, out of your monthly allocation. |
 
 !!! info
 

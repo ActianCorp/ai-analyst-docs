@@ -8,4 +8,4 @@ Select an endpoint group from the sidebar to explore the available operations.
 
 | Resource | What it includes | Operations |
 | -------- | ---------------- | ---------- |
-| Environment | Models, relationships, metrics, glossary terms, agents | Export (GET), Sync (PUT) |
+| [Environment](environment.md) | Models, relationships, metrics, glossary terms, agents | Export (GET), Sync (PUT) |

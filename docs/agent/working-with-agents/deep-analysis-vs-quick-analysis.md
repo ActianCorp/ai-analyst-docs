@@ -2,7 +2,9 @@
 
 !!! warning
 
-    Deep Analysis is currently in beta and is only available to a limited amount of users. For more information, please reach out to your account manager.
+    **This feature has been retired.** Quick Analysis and Deep Analysis modes no longer exist. The AI Analyst is now a single, unified analyst that can handle any question — simple or complex — in any conversation. Reports can be built at any time without switching modes.
+
+    See [Reports](reports.md) and [Plan Mode](plan-mode.md) for the new capabilities that replace Deep Analysis.
 
 
 Deep Analysis is an advanced research mode that creates comprehensive reports for complex business questions. Unlike Quick Analysis, which provides immediate single-turn answers, Deep Analysis creates a research plan and executes multiple targeted analyses to deliver thorough insights.
