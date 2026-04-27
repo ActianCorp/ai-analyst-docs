@@ -50,11 +50,7 @@ You can trigger agent's by tagging them using @ActianAIAnalyst\
 The agent will respond with reactions and as a reply to that message.\
 Tagging the agent in a follow up to that thread will trigger a follow up task in the same conversation.
 
-Add `--plan` to your query to trigger Plan Mode.
-
-!!! warning
-
-    The `--deep` flag has been removed and will no longer work. Use `--plan` instead.
+Add `--plan` to your query to trigger Plan Mode. The previous `--deep` flag has been removed.
 
 ***
 

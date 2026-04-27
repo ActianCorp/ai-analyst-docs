@@ -23,10 +23,6 @@ Look for the **\[Plan]** toggle pill to the left of the send button in the chat 
 
 When using Actian AI Analyst in [Slack](../../connections/messaging-apps/slack.md) or [Microsoft Teams](../../connections/messaging-apps/teams.md), add `--plan` to your query to trigger Plan Mode for that message.
 
-!!! warning
-
-    The `--deep` flag has been removed and will no longer work. Use `--plan` instead.
-
 ## How it works
 
 ### Using Plan Mode
