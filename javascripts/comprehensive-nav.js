@@ -29,7 +29,6 @@
           { name: 'Overview',                        href: 'agent/working-with-agents/wobby-explorer.html' },
           { name: 'Asking Questions',                href: 'agent/working-with-agents/asking-questions.html' },
           { name: 'Saved Prompts',                   href: 'agent/working-with-agents/saved-prompts.html' },
-          { name: 'Deep Analysis vs Quick Analysis', href: 'agent/working-with-agents/deep-analysis-vs-quick-analysis.html' },
           { name: 'Tips for Quick Analysis',         href: 'agent/working-with-agents/tips-for-quick-analysis.html' }
         ]}
       ]

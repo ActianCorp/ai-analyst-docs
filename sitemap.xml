@@ -2,378 +2,374 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.wobby.ai/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/account/two-factor-authentication-2fa.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/creating-an-agent/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/creating-an-agent/access-management.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/creating-an-agent/agent-instructions.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/artifacts.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/asking-questions.html</loc>
-         <lastmod>2026-04-25</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.wobby.ai/agent/working-with-agents/deep-analysis-vs-quick-analysis.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/inbox.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/plan-mode.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/reports.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/saved-prompts.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/scheduled-insights.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/sharing.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/tips-for-quick-analysis.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/agent/working-with-agents/wobby-explorer.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/creating-an-agent/configuration.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/creating-an-agent/models.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/creating-an-agent/saved-prompts.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/creating-an-agent/suggestions.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/monitoring/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/monitoring/analytics.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/ai-analysts/monitoring/traces.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/data-source-health-monitoring.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/catalog/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/catalog/actian-data-intelligence-platform.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/actian-data-platform.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/actian-zen.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/aws-redshift.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/azure-synapse.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/bigquery.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/clickhouse.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/csv-files.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/databricks.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/mariadb.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/microsoft-fabric.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/microsoft-sql-server-ms-sql.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/motherduck.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/mysql.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/postgresql.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/connect-a-data-source/snowflake.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/messaging-apps/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/messaging-apps/slack.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/messaging-apps/teams.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/table-metadata/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/table-metadata/import-metadata-using-yaml.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/connections/table-metadata/manage-metadata-in-the-ui.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/audit-logs.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/how-ai-analyst-handles-your-data.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/how-wobby-protects-your-data.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/export-semantic-layer-and-agents/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/export-semantic-layer-and-agents/open-semantic-interchange-format.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/export-semantic-layer-and-agents/wobby-lossless-format.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/import-semantic-layer-and-agents/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/import-semantic-layer-and-agents/import-osi-format.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/governance/import-semantic-layer-and-agents/import-wobby-format-yaml-json.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/public-api/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/public-api/api-keys.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/public-api/reference/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/quick-start/access-wobby.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/quick-start/creating-your-first-ai-agent.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/quick-start/getting-started-explorer.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/quick-start/getting-started-studio.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/glossary.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/metrics.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/overview.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semantic-sql-semql.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/dimensions.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/measures.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/pre-defined-filters.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/relationships.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/creating-models/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/creating-models/creating-models-from-sql.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/creating-models/creating-models-from-table.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/models/creating-models/creating-models-with-steward.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/index.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/compilation-and-dialects.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/core-syntax.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/dimensions-vs-measures.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/examples.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/semantic-layer/semql/geo-functions.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/billing.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/general.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/integrations.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/members.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/notifications.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/profile.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/settings/security.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/steward-ai-agent/steward-inbox.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
     <url>
          <loc>https://docs.wobby.ai/steward-ai-agent/using-steward.html</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-27</lastmod>
     </url>
 </urlset>
