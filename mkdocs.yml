@@ -28,7 +28,6 @@ nav:
     - Inbox: agent/working-with-agents/inbox.md
     - Sharing: agent/working-with-agents/sharing.md
     - Tips for Asking Questions: agent/working-with-agents/tips-for-quick-analysis.md
-    - Deep Analysis vs Quick Analysis: agent/working-with-agents/deep-analysis-vs-quick-analysis.md
   - AI Analysts:
     - Creating an AI Analyst:
       - agent/creating-an-agent/README.md
