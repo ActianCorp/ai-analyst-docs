@@ -108,6 +108,11 @@ To upload the Actian AI Analyst bot, your Teams policy must allow custom app upl
 
 * In the channel where the bot is present, mention the bot (`@ActianAIAnalyst`) to ask questions or trigger actions.
 * The bot will only respond in the channel you configured in Studio. Tagging it in other channels will not work.
+* Add `--plan` to your query to trigger Plan Mode.
+
+!!! warning
+
+    The `--deep` flag has been removed and will no longer work. Use `--plan` instead.
 
 ***
 

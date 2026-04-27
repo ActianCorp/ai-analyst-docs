@@ -28,4 +28,7 @@ Explorer is fully supported on mobile devices — query your data and view resul
 * [Reports](reports.md) — Build structured reports from your analysis
 * [Artifacts](artifacts.md) — Save and revisit charts, tables, and reports
 * [Tips for Asking Questions](tips-for-quick-analysis.md) — How to write effective questions
-* [Deep Analysis vs Quick Analysis](deep-analysis-vs-quick-analysis.md) — _(Retired — kept for reference)_
+
+!!! info
+
+    Deep Analysis and Quick Analysis modes have been retired. Use [Plan Mode](plan-mode.md) instead.
