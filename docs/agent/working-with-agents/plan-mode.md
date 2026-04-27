@@ -19,6 +19,14 @@ Look for the **\[Plan]** toggle pill to the left of the send button in the chat 
 * A one-time tooltip appears when you first enable it: _"Plan mode on — AI Analyst will outline its approach before starting."_
 * The toggle is disabled while the AI Analyst is generating a response
 
+### In Slack and Teams
+
+When using Actian AI Analyst in [Slack](../../connections/messaging-apps/slack.md) or [Microsoft Teams](../../connections/messaging-apps/teams.md), add `--plan` to your query to trigger Plan Mode for that message.
+
+!!! warning
+
+    The `--deep` flag has been removed and will no longer work. Use `--plan` instead.
+
 ## How it works
 
 ### Using Plan Mode
