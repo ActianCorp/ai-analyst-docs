@@ -142,7 +142,6 @@ theme:
     - search.focus
     - content.code.copy
     - content.code.annotate
-    - content.action.edit
   palette:
     - scheme: default
       primary: custom
@@ -158,8 +157,7 @@ theme:
         name: Switch to light mode
   custom_dir: theme_overrides/
   icon:
-    repo: fontawesome/brands/github
-    edit: fontawesome/regular/pen-to-square
+    repo: fontawesome/solid/headset
   font: false
   favicon: assets/favicon.png
   
@@ -223,10 +221,11 @@ extra:
             Thanks for your feedback!
 
 
-# Repository
-repo_url: https://github.com/ActianCorp/ai-analyst-docs
-repo_name: ActianCorp/ai-analyst-docs
-edit_uri: "edit/main/docs/"
+
+
+# Support
+repo_url: https://www.actian.com/contact/
+repo_name: Support
 
 # Customization
 extra_css:
