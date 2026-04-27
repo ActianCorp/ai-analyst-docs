@@ -26,10 +26,16 @@
       href: 'agent/working-with-agents/index.html',
       pages: [
         { name: 'Actian AI Analyst Explorer', href: 'agent/working-with-agents/index.html', pages: [
-          { name: 'Overview',                        href: 'agent/working-with-agents/wobby-explorer.html' },
-          { name: 'Asking Questions',                href: 'agent/working-with-agents/asking-questions.html' },
-          { name: 'Saved Prompts',                   href: 'agent/working-with-agents/saved-prompts.html' },
-          { name: 'Tips for Quick Analysis',         href: 'agent/working-with-agents/tips-for-quick-analysis.html' }
+          { name: 'Overview',                  href: 'agent/working-with-agents/wobby-explorer.html' },
+          { name: 'Asking Questions',          href: 'agent/working-with-agents/asking-questions.html' },
+          { name: 'Saved Prompts',             href: 'agent/working-with-agents/saved-prompts.html' },
+          { name: 'Plan Mode',                 href: 'agent/working-with-agents/plan-mode.html' },
+          { name: 'Reports',                   href: 'agent/working-with-agents/reports.html' },
+          { name: 'Artifacts',                 href: 'agent/working-with-agents/artifacts.html' },
+          { name: 'Scheduled Insights',        href: 'agent/working-with-agents/scheduled-insights.html' },
+          { name: 'Inbox',                     href: 'agent/working-with-agents/inbox.html' },
+          { name: 'Sharing',                   href: 'agent/working-with-agents/sharing.html' },
+          { name: 'Tips for Asking Questions', href: 'agent/working-with-agents/tips-for-quick-analysis.html' }
         ]}
       ]
     },
@@ -39,12 +45,12 @@
       href: 'ai-analysts/creating-an-agent/models.html',
       pages: [
         { name: 'Creating an AI Analyst', href: 'agent/creating-an-agent/index.html', pages: [
-          { name: 'Models',             href: 'ai-analysts/creating-an-agent/models.html' },
-          { name: 'Instructions',       href: 'agent/creating-an-agent/agent-instructions.html' },
-          { name: 'Access Management',  href: 'agent/creating-an-agent/access-management.html' },
-          { name: 'Configuration',      href: 'ai-analysts/creating-an-agent/configuration.html' },
-          { name: 'Suggestions',        href: 'ai-analysts/creating-an-agent/suggestions.html' },
-          { name: 'Saved Prompts',      href: 'ai-analysts/creating-an-agent/saved-prompts.html' }
+          { name: 'Models',            href: 'ai-analysts/creating-an-agent/models.html' },
+          { name: 'Instructions',      href: 'agent/creating-an-agent/agent-instructions.html' },
+          { name: 'Access Management', href: 'agent/creating-an-agent/access-management.html' },
+          { name: 'Configuration',     href: 'ai-analysts/creating-an-agent/configuration.html' },
+          { name: 'Suggestions',       href: 'ai-analysts/creating-an-agent/suggestions.html' },
+          { name: 'Saved Prompts',     href: 'ai-analysts/creating-an-agent/saved-prompts.html' }
         ]},
         { name: 'Monitoring', href: 'ai-analysts/monitoring/index.html', pages: [
           { name: 'Traces',    href: 'ai-analysts/monitoring/traces.html' },
@@ -83,8 +89,8 @@
           { name: 'Teams',  href: 'connections/messaging-apps/teams.html' }
         ]},
         { name: 'Table Metadata', href: 'connections/table-metadata/index.html', pages: [
-          { name: 'Manage metadata in the UI',   href: 'connections/table-metadata/manage-metadata-in-the-ui.html' },
-          { name: 'Import metadata using YAML',  href: 'connections/table-metadata/import-metadata-using-yaml.html' }
+          { name: 'Manage metadata in the UI',  href: 'connections/table-metadata/manage-metadata-in-the-ui.html' },
+          { name: 'Import metadata using YAML', href: 'connections/table-metadata/import-metadata-using-yaml.html' }
         ]}
       ]
     },
@@ -100,10 +106,10 @@
             { name: 'Creating Models from SQL',     href: 'semantic-layer/models/creating-models/creating-models-from-sql.html' },
             { name: 'Creating Models from Table',   href: 'semantic-layer/models/creating-models/creating-models-from-table.html' }
           ]},
-          { name: 'Dimensions',         href: 'semantic-layer/models/dimensions.html' },
-          { name: 'Measures',           href: 'semantic-layer/models/measures.html' },
+          { name: 'Dimensions',          href: 'semantic-layer/models/dimensions.html' },
+          { name: 'Measures',            href: 'semantic-layer/models/measures.html' },
           { name: 'Pre-defined Filters', href: 'semantic-layer/models/pre-defined-filters.html' },
-          { name: 'Relationships',      href: 'semantic-layer/models/relationships.html' }
+          { name: 'Relationships',       href: 'semantic-layer/models/relationships.html' }
         ]},
         { name: 'Metrics',  href: 'semantic-layer/metrics.html' },
         { name: 'Glossary', href: 'semantic-layer/glossary.html' },
@@ -150,10 +156,10 @@
         { name: 'Audit Logs', href: 'governance/audit-logs.html' },
         { name: 'Export Semantic Layer & Agents', href: 'governance/export-semantic-layer-and-agents/index.html', pages: [
           { name: 'Actian AI Analyst Lossless Format',    href: 'governance/export-semantic-layer-and-agents/wobby-lossless-format.html' },
-          { name: 'Open Semantic Interchange Format', href: 'governance/export-semantic-layer-and-agents/open-semantic-interchange-format.html' }
+          { name: 'Open Semantic Interchange Format',     href: 'governance/export-semantic-layer-and-agents/open-semantic-interchange-format.html' }
         ]},
         { name: 'Import Semantic Layer & Agents', href: 'governance/import-semantic-layer-and-agents/index.html', pages: [
-          { name: 'Import OSI Format',                          href: 'governance/import-semantic-layer-and-agents/import-osi-format.html' },
+          { name: 'Import OSI Format',                             href: 'governance/import-semantic-layer-and-agents/import-osi-format.html' },
           { name: 'Import Actian AI Analyst Format (YAML / JSON)', href: 'governance/import-semantic-layer-and-agents/import-wobby-format-yaml-json.html' }
         ]},
         { name: 'How AI Analyst handles your data',         href: 'governance/how-ai-analyst-handles-your-data.html' },
@@ -253,9 +259,8 @@
     return ul;
   }
 
-  // ─── NEW: scroll the sidebar so the active link is visible ───────────────
+  // ─── Scroll the sidebar so the active link is visible ───────────────────
   function scrollToActive(sidebar) {
-    // Give the browser one frame to finish layout before measuring
     requestAnimationFrame(function() {
       var activeLink = sidebar.querySelector('.cn-sublink--active, .cn-label--active');
       if (!activeLink) return;
@@ -266,14 +271,12 @@
       var wrapHeight = scrollWrap.clientHeight;
       var offset     = linkTop - wrapTop;
 
-      // Only scroll if the active item isn't already fully visible
       if (offset < 0 || offset > wrapHeight - activeLink.offsetHeight) {
-        // Centre it in the scroll container
         scrollWrap.scrollTop += offset - wrapHeight / 2 + activeLink.offsetHeight / 2;
       }
     });
   }
-  // ─────────────────────────────────────────────────────────────────────────
+  // ────────────────────────────────────────────────────────────────────────
 
   function buildNav() {
     var sidebar = document.querySelector('.md-sidebar--primary .md-sidebar__scrollwrap');
@@ -340,9 +343,7 @@
     var inner = sidebar.querySelector('.md-sidebar__inner');
     if (inner) inner.insertBefore(nav, inner.firstChild);
 
-    // ── Scroll active link into view after nav is inserted ──────────────────
     scrollToActive(sidebar);
-    // ────────────────────────────────────────────────────────────────────────
   }
 
   function fixTabLinks() {
